@@ -1,0 +1,38 @@
+﻿# dependencies
+/node_modules
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# local env files
+.env*.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+.next-dev.log
+.next-dev.err
+
+# project specific
+instructions.md
+iru-vi-plan.md
+Prompt-Civic-Editorial-Overhaul.md
+impetus-academy-nextjs-handoff-draft.md
+impetus-academy-handoff
+reference-iru-vi
