@@ -29,7 +29,7 @@ export default function ContactSection({
         <div>
           <h3 className="text-2xl font-semibold tracking-[-0.04em] text-card-foreground">School contact details</h3>
           <p className="mt-3 max-w-lg text-base leading-relaxed text-muted">
-            Contact details are taken from the supplied source copy and should be confirmed before final launch.
+            Use these details to reach the school team for admissions enquiries, visits, and general questions.
           </p>
           <div className="mt-8 grid gap-4 sm:grid-cols-2">
             {contactItems.map((item) => (
@@ -55,7 +55,7 @@ export default function ContactSection({
               <h3 className="mt-3 text-2xl font-semibold tracking-[-0.04em] text-card-foreground">Book an admission enquiry</h3>
             </div>
             <p className="max-w-sm text-sm leading-relaxed text-muted">
-              This first pass keeps the form as a presentation layer until submission handling and privacy policy copy are confirmed.
+              Share the essentials, and the admissions team can guide you on the next step once enquiry handling is connected.
             </p>
           </div>
 
@@ -89,7 +89,7 @@ export default function ContactSection({
               <textarea name="message" rows={5} placeholder="Tell us what you would like to confirm." />
             </label>
             <button type="button" className="button-primary w-full">
-              Submission pending backend confirmation
+              Send enquiry
             </button>
           </form>
         </div>
@@ -97,6 +97,7 @@ export default function ContactSection({
     </Section>
   );
 }
+
 
 
 

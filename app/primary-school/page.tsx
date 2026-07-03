@@ -20,7 +20,7 @@ export default function PrimarySchoolPage() {
           <div className="dark-panel rounded-[2.5rem] p-6 text-white sm:p-8">
             <p className="font-mono text-[0.68rem] uppercase tracking-[0.22em] text-white/48">Primary purpose</p>
             <h2 className="mt-5 text-3xl font-semibold tracking-[-0.045em]">Foundations with confidence, curiosity, and character.</h2>
-            <p className="mt-5 text-base leading-relaxed text-white/72">Source copy says the primary arm was established in September 2023 to cater for well-rounded primary education, nurturing future leaders and supporting academic excellence and character development.</p>
+            <p className="mt-5 text-base leading-relaxed text-white/72">The primary arm was established in September 2023 to provide well-rounded primary education, nurture future leaders, and support academic excellence and character development.</p>
           </div>
           <div className="grid gap-5 md:grid-cols-2">
             {stages.map((stage, index) => <FeatureCard key={stage.slug} title={stage.title} description={stage.summary} href={stage.href} ctaLabel="View curriculum" icon={index === 0 ? Sparkles : School} />)}
@@ -36,4 +36,5 @@ export default function PrimarySchoolPage() {
     </>
   );
 }
+
 

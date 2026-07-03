@@ -28,17 +28,13 @@ export default function LeadershipDetailPage({ content }: { content: LeadershipP
                 )}
               </article>
             ))}
-            <article className="dark-panel rounded-[2rem] p-6 text-white sm:p-7">
-              <p className="font-mono text-[0.66rem] uppercase tracking-[0.22em] text-white/48">Confirmation needed</p>
-              <ul className="mt-4 space-y-3 text-sm leading-relaxed text-white/72">
-                {content.confirmationNeeded.map((item) => <li key={item}>- {item}</li>)}
-              </ul>
-            </article>
+            <article className="dark-panel rounded-[2rem] p-6 text-white sm:p-7">`r`n              <p className="font-mono text-[0.66rem] uppercase tracking-[0.22em] text-white/48">Profile note</p>`r`n              <p className="mt-4 text-sm leading-relaxed text-white/72">A few leadership profile details are still being checked with the school team before final publication.</p>`r`n            </article>
           </div>
         </div>
       </Section>
     </>
   );
 }
+
 
 

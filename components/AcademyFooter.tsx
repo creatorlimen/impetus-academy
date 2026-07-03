@@ -52,7 +52,7 @@ export default function AcademyFooter() {
               </div>
             </div>
             <p className="mt-5 max-w-md text-sm leading-relaxed text-primary-100/66">
-              Built from supplied school content. Unconfirmed facts remain marked for confirmation rather than converted into public claims.
+              A growing school community for Primary and Secondary learners, built around character, confidence, practical skills, and thoughtful use of technology.
             </p>
           </div>
 
@@ -112,6 +112,7 @@ export default function AcademyFooter() {
     </footer>
   );
 }
+
 
 
 

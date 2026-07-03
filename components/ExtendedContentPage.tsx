@@ -41,17 +41,15 @@ export default function ExtendedContentPage({ content, ctaLabel, ctaHref, childr
           </div>
 
           <aside className="dark-panel h-fit rounded-[2rem] p-6 text-white sm:p-7">
-            <p className="font-mono text-[0.66rem] uppercase tracking-[0.22em] text-white/48">Migration note</p>
-            <h2 className="mt-4 text-2xl font-semibold tracking-[-0.04em]">Source-backed staging copy.</h2>
+            <p className="font-mono text-[0.66rem] uppercase tracking-[0.22em] text-white/48">Page note</p>
+            <h2 className="mt-4 text-2xl font-semibold tracking-[-0.04em]">Built with care.</h2>
             <p className="mt-4 text-sm leading-relaxed text-white/70">
-              This page is built from supplied Impetus copy and conservative editorial cleanup. Uncertain details remain visible for review.
+              This page keeps the school story clear while separating details that still need final confirmation.
             </p>
             {content.confirmationNeeded && (
               <div className="mt-6 rounded-[1.35rem] border border-accent-300/20 bg-accent-300/10 p-4">
-                <p className="font-mono text-[0.62rem] uppercase tracking-[0.18em] text-accent-200">Confirmation needed</p>
-                <ul className="mt-3 space-y-2 text-sm leading-relaxed text-white/72">
-                  {content.confirmationNeeded.map((item) => <li key={item}>- {item}</li>)}
-                </ul>
+                <p className="font-mono text-[0.62rem] uppercase tracking-[0.18em] text-accent-200">Details being checked</p>
+                <p className="mt-3 text-sm leading-relaxed text-white/72">A few details are still being confirmed with the school team before final publication.</p>
               </div>
             )}
           </aside>
@@ -60,4 +58,3 @@ export default function ExtendedContentPage({ content, ctaLabel, ctaHref, childr
     </>
   );
 }
-

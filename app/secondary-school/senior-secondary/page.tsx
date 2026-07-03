@@ -6,9 +6,9 @@ export const metadata = { title: 'Senior Secondary' };
 
 export default function SeniorSecondaryPage() {
   const pathways = [
-    { title: 'Science Pathway', href: '/secondary-school/senior-secondary/science', description: 'Science stream curriculum drawn from supplied SSS Science copy.' },
-    { title: 'Arts Pathway', href: '/secondary-school/senior-secondary/arts', description: 'Arts stream curriculum. Source page uses Art; public label is standardized to Arts pending confirmation.' },
-    { title: 'Commercial Pathway', href: '/secondary-school/senior-secondary/commercial', description: 'Commercial stream curriculum covering business and financial literacy themes from supplied copy.' },
+    { title: 'Science Pathway', href: '/secondary-school/senior-secondary/science', description: 'A senior pathway for learners focusing on science and related subjects.' },
+    { title: 'Arts Pathway', href: '/secondary-school/senior-secondary/arts', description: 'A senior pathway for learners focusing on arts, languages, humanities, and creative subjects.' },
+    { title: 'Commercial Pathway', href: '/secondary-school/senior-secondary/commercial', description: 'A senior pathway for learners focusing on business, commerce, accounting, and financial literacy.' },
   ];
   return (
     <>
@@ -21,6 +21,7 @@ export default function SeniorSecondaryPage() {
     </>
   );
 }
+
 
 
 

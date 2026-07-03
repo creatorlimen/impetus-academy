@@ -34,10 +34,10 @@ export default function Home() {
           <div className="surface-panel rounded-[2.5rem] p-6 sm:p-8 lg:p-10">
             <div className="max-w-3xl space-y-5 text-base leading-[1.9] text-muted md:text-lg">
               <p>
-                The source copy describes an academy that combines technology with traditional curriculum to create a blended learning environment, particularly across mathematics, science, and art.
+                At Impetus, technology supports good teaching rather than replacing it. Lessons are designed to help children see ideas clearly, practise with confidence, and connect classroom learning with everyday life.
               </p>
               <p>
-                Its approach helps learners understand deeply, communicate confidently, think critically, and apply what they learn across school life, future work, and civic life.
+                Across Primary and Secondary School, learners are guided to read well, reason carefully, communicate clearly, create boldly, and grow in character.
               </p>
             </div>
             <Link href="/about/our-story" className="button-link mt-8">
@@ -53,7 +53,7 @@ export default function Home() {
               Vision: To promote a balanced use of technology to motivate scholars to develop deeper conceptual understanding, ask meaningful questions, and cultivate transferable skills.
             </p>
             <p className="mt-4 text-sm leading-relaxed text-white/72 sm:text-base">
-              Mission: To help society build essential skills that translate meaningfully into work and civic life.
+              Mission: To help learners build the skills, values, and confidence they need for school, life, and the future.
             </p>
           </div>
         </div>
@@ -62,7 +62,7 @@ export default function Home() {
       <Section
         eyebrow="Learning Journey"
         title="Four linked stages, one academy standard."
-        subtitle="The source content gives each stage its own curriculum direction. The build keeps those stages visible without turning one division into a sub-feature of the other."
+        subtitle="Each stage has its own rhythm, curriculum focus, and next step, while staying connected to one academy standard."
         className="bg-surface/65"
         align="left"
       >
@@ -127,7 +127,7 @@ export default function Home() {
       <Section
         eyebrow="Academics"
         title="Curriculum focus that cuts across the academy."
-        subtitle="Repeated source curriculum content has been centralized here and can be reused across Primary, Secondary, and pathway pages."
+        subtitle="Core skills are introduced early, strengthened steadily, and revisited with greater depth as learners move through the academy."
         align="left"
       >
         <div className="grid gap-6 lg:grid-cols-[0.8fr_1.2fr]">
@@ -154,7 +154,7 @@ export default function Home() {
 
       <Section
         title="From the founder's message."
-        subtitle="The homepage uses a shortened source-based preview and keeps exact founder identity details marked for confirmation before final publication."
+        subtitle="A short reflection on the school journey, its beginning, and its commitment to purposeful learning."
         className="bg-surface/65"
         align="left"
       >
@@ -208,7 +208,7 @@ export default function Home() {
         </div>
       </section>
 
-      <Section eyebrow="FAQ" title="Common questions, held in one place." subtitle="The source site repeats FAQ content across many pages. This build centralizes it and renders selected subsets." className="bg-surface/70" align="left">
+      <Section eyebrow="FAQ" title="Common questions, held in one place." subtitle="Clear answers to the questions families most often ask while considering Impetus Academy." className="bg-surface/70" align="left">
         <FaqAccordion faqs={faqs} />
       </Section>
 
@@ -216,6 +216,7 @@ export default function Home() {
     </>
   );
 }
+
 
 
 

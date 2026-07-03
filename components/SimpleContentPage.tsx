@@ -24,18 +24,16 @@ export default function SimpleContentPage({ brief, ctaLabel = 'Contact the Schoo
             {children}
           </article>
           <aside className="dark-panel h-fit rounded-[2.2rem] p-6 text-white sm:p-7">
-            <p className="font-mono text-[0.66rem] uppercase tracking-[0.22em] text-white/48">Content status</p>
-            <h2 className="mt-4 text-2xl font-semibold tracking-[-0.04em]">No silent invention.</h2>
+            <p className="font-mono text-[0.66rem] uppercase tracking-[0.22em] text-white/48">Page note</p>
+            <h2 className="mt-4 text-2xl font-semibold tracking-[-0.04em]">Careful with the details.</h2>
             <p className="mt-4 text-sm leading-relaxed text-white/70">
-              This page uses supplied copy and marks uncertain details for confirmation before final publication.
+              This page stays close to confirmed school information. Details still being checked are listed separately.
             </p>
             {brief.confirmationNeeded && (
-              <ul className="mt-5 space-y-3 text-sm leading-relaxed text-white/70">
-                {brief.confirmationNeeded.map((item) => <li key={item}>- {item}</li>)}
-              </ul>
+              <p className="mt-5 text-sm leading-relaxed text-white/70">A few details are still being checked with the school team before final publication.</p>
             )}
             <Link href="/contact" className="button-secondary mt-6">
-              Confirm details
+              Ask a question
               <ArrowRight className="h-4 w-4" />
             </Link>
           </aside>
@@ -44,6 +42,3 @@ export default function SimpleContentPage({ brief, ctaLabel = 'Contact the Schoo
     </>
   );
 }
-
-
-

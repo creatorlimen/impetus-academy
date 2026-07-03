@@ -8,7 +8,7 @@ export default function ConfirmationNeededPage() {
   const settings = getSiteSettings();
   return (
     <>
-      <PageHero eyebrow="Staging Checklist" title="Facts to confirm before final publication." subtitle="This page keeps uncertain source details visible for review so they are not silently dropped or accidentally treated as final." />
+      <PageHero eyebrow="Staging Checklist" title="Facts to confirm before final publication." subtitle="This page keeps details that still need review in one place so they are not accidentally treated as final." />
       <Section title="Open confirmation items." align="left">
         <div className="grid gap-4 md:grid-cols-2">
           {settings.uncertainFacts.map((fact) => (
@@ -30,5 +30,6 @@ export default function ConfirmationNeededPage() {
     </>
   );
 }
+
 
 

@@ -12,7 +12,7 @@ export default function AdmissionsPage() {
   return (
     <>
       <PageHero eyebrow="Admissions" title="Begin with the right school division." subtitle="Admissions is presented as an enquiry pathway for Primary and Secondary families. It does not imply automatic admission, payment, or final placement." />
-      <Section title="Admissions process from supplied source copy." subtitle="The original ten-step process has been cleaned into a scannable sequence. Sensitive or uncertain items are visibly marked." align="left">
+      <Section title="How admissions enquiries currently work." subtitle="Start with an enquiry, then let the school confirm the right forms, assessment dates, documents, and next steps." align="left">
         <div className="grid gap-5 md:grid-cols-2">
           {steps.map((step, index) => (
             <article key={step.title} className={`rounded-[2rem] p-6 sm:p-7 ${step.publicationStatus === 'hidden-pending-approval' ? 'dark-panel text-white' : 'surface-panel'}`}>
@@ -27,9 +27,9 @@ export default function AdmissionsPage() {
         </div>
       </Section>
 
-      <Section title="Confirmation checklist before final admissions publication." className="bg-surface/65" align="left">
+      <Section title="Details the school should confirm before final publication." className="bg-surface/65" align="left">
         <div className="dark-panel rounded-[2.5rem] p-6 text-white sm:p-8 lg:p-10">
-          <p className="max-w-3xl text-base leading-relaxed text-white/72 md:text-lg">The source contains fee, boarding, document, and bank-account references. These are retained in the migration model as confirmation items but should not become public instructions without written approval.</p>
+          <p className="max-w-3xl text-base leading-relaxed text-white/72 md:text-lg">Some admissions details need written confirmation before they should appear as public instructions, especially fees, boarding, documents, and payment information.</p>
           <div className="mt-8 grid gap-3 md:grid-cols-2">
             {settings.uncertainFacts.map((fact) => (
               <div key={fact} className="rounded-[1.35rem] border border-white/10 bg-white/7 px-4 py-3 text-sm leading-relaxed text-white/72">{fact}</div>
@@ -42,5 +42,6 @@ export default function AdmissionsPage() {
     </>
   );
 }
+
 
 

@@ -77,9 +77,9 @@ export const siteSettings: SiteSettings = {
   phones: ['07057553716', '08060672505'],
   email: 'info@impetusacademy.ng',
   openingHours: 'Monday-Friday: 8:00 a.m.-4:00 p.m.',
-  dropOffPickupNote: 'Source copy mentions child drop-off at 7:00 a.m.-7:30 a.m. and pickup at 3:00 p.m.-3:30 p.m.; confirm before publishing globally.',
+  dropOffPickupNote: 'Drop-off and pickup times should be confirmed with the school before they are published across the site.',
   uncertainFacts: [
-    'Founder public name and title: source shows Olaide Adetela M.T. and media label Mr. Tella.',
+    'Founder public name and title need final confirmation before publication.',
     'Proprietor public name, title, credentials, and portrait require confirmation.',
     'Public label for Elementary, Primary, or Elementary/Primary requires confirmation.',
     'Fees, bank details, boarding status, application fee, social links, and privacy policy copy require confirmation.',
@@ -206,11 +206,11 @@ export const curriculumFocus: CurriculumFocus[] = [
 export const benefits: Benefit[] = [
   {
     title: 'Technology-integrated learning',
-    description: 'Information and Communication Technology is deployed for effective teaching and learning, with source copy noting smart boards, robotics kits, coding tools, and multimedia resources.',
+    description: 'Technology is used to make lessons clearer and more engaging, with tools such as smart boards, robotics kits, coding resources, and multimedia support.',
   },
   {
     title: 'Individualised attention',
-    description: 'The school recognises different strengths, interests, and learning styles, with educators providing personalised attention through class-size and tracking practices described in the source copy.',
+    description: 'The school recognises that children learn differently, so teachers pay attention to individual strengths, interests, progress, and learning needs.',
   },
   {
     title: 'Activity-based teaching',
@@ -222,7 +222,7 @@ export const benefits: Benefit[] = [
   },
   {
     title: 'Communication and critical thinking',
-    description: 'Students build written, oral, analytical, problem-solving, and decision-making skills for work, civic life, and future learning.',
+    description: 'Students build written, oral, analytical, problem-solving, and decision-making skills they can carry into school, life, and future study.',
   },
   {
     title: 'Collaborative school community',
@@ -243,7 +243,7 @@ export const faqs: FaqItem[] = [
   },
   {
     question: 'What benefits does IILA offer its students?',
-    answer: 'Source copy highlights technology integration, individualised attention, extracurricular activities, collaborative community, and holistic development.',
+    answer: 'Families are drawn to the school\'s mix of technology-supported learning, individual attention, extracurricular opportunities, community, and whole-child development.',
     categories: ['general'],
   },
   {
@@ -258,7 +258,7 @@ export const faqs: FaqItem[] = [
   },
   {
     question: 'What sets IILA apart from other educational institutions?',
-    answer: 'The source copy describes a blend of technology integration and vocational education training, combining academic knowledge with practical skills.',
+    answer: 'Impetus pairs academic learning with practical skills, technology-supported teaching, and vocational awareness.',
     categories: ['general', 'academics'],
   },
   {
@@ -307,8 +307,8 @@ export const pageBriefs: Record<string, PageBrief> = {
     eyebrow: 'Academy Overview',
     summary: 'Impetus Integrated Learning Academy provides a supportive environment rooted in integrity, academic excellence, character, practical skills, and technology-enabled learning.',
     body: [
-      'The academy follows a comprehensive educational approach that combines technology with traditional curriculum to create a blended learning environment.',
-      'Its approach helps learners understand deeply, communicate confidently, think critically, and apply what they learn.',
+      'The academy combines strong classroom teaching with thoughtful use of technology, creating a learning environment that feels both grounded and forward-looking.',
+      'Learners are guided to understand deeply, communicate confidently, think critically, and apply what they learn.',
     ],
   },
   story: {
@@ -316,7 +316,7 @@ export const pageBriefs: Record<string, PageBrief> = {
     eyebrow: 'Our Story',
     summary: 'The school began as an offshoot of Impetus Tutorial College and has grown into an academy serving both Primary and Secondary learners.',
     body: [
-      'The source copy states that the school commenced operation on 10 September 2018 with three students, seven full-time academic staff, three part-time teaching staff, and two support staff.',
+      'The school commenced operation on 10 September 2018 with three students, seven full-time academic staff, three part-time teaching staff, and two support staff.',
       'The second and third terms improved to eight students and thirteen staff, and the population reached one hundred students in three academic years.',
       'The primary arm was established in September 2023 to cater for well-rounded primary education.',
     ],
@@ -327,16 +327,16 @@ export const pageBriefs: Record<string, PageBrief> = {
     eyebrow: 'Founder',
     summary: 'The founder message frames Impetus as a community built around excellence, innovation, technology integration, vocational training, and holistic education.',
     body: [
-      'The source message reflects on a journey that began in 2018 with three students and a dedicated team of educators.',
-      'It describes a vision to bridge traditional education and the evolving digital landscape, helping students discover strengths and talents through technology integration and vocational training.',
+      'The founder message reflects on a journey that began in 2018 with three students and a dedicated team of educators.',
+      'The message points to a vision of bridging strong traditional education with the digital landscape, helping students discover their strengths through technology integration and vocational training.',
     ],
     confirmationNeeded: ['Confirm founder name, title, credentials, preferred spelling, and portrait.'],
   },
   proprietor: {
     title: 'Proprietor profile.',
     eyebrow: 'Leadership',
-    summary: 'The proprietor page will preserve supplied profile copy while waiting for final confirmation of public name, title, credentials, and portrait.',
-    body: ['Source profile copy should be migrated in the next detailed content pass and checked for factual certainty before final publication.'],
+    summary: 'The proprietor page introduces the school\'s leadership while keeping final name, title, credentials, and portrait details marked for confirmation.',
+    body: ['The profile should be completed in the next detailed content pass once the preferred public biography is confirmed.'],
     confirmationNeeded: ['Confirm proprietor name, title, credentials, portrait, and any claims that need trimming.'],
   },
 };
@@ -499,7 +499,7 @@ export const curriculumPages: Record<string, CurriculumPageContent> = {
         title: 'Creative, practical, and personal development',
         items: [
           'Arts and Humanities, Technology and Digital Literacy, Physical Education and Health, Vocational and Life Skills, Foreign Language, and Personal Development.',
-          'The source copy also describes regular assessment through quizzes, tests, projects, presentations, practical exams, and peer assessment.',
+          'Students are also assessed through quizzes, tests, projects, presentations, practical exams, and peer assessment.',
         ],
       },
     ],
@@ -554,7 +554,7 @@ export const curriculumPages: Record<string, CurriculumPageContent> = {
         ],
       },
     ],
-    confirmationNeeded: ['Source page uses Art. Public navigation currently uses Arts pending client confirmation.'],
+    confirmationNeeded: ['Confirm final public pathway label: Art or Arts.'],
   },
   commercial: {
     slug: 'commercial',
@@ -594,7 +594,7 @@ export const leadershipPages: Record<'founder' | 'proprietor', LeadershipPageCon
     sections: [
       {
         title: 'Profile summary',
-        body: 'Mashood Tajudeen Olaide Adetela brings expertise to his role as founder of the school. The source copy describes a background in Educational Management and a decade of experience as a Technology Merchant, with a belief that education should celebrate each child\'s unique talents.',
+        body: 'Mashood Tajudeen Olaide Adetela brings an education and technology background to his role as founder of the school. His profile highlights Educational Management experience, a decade as a Technology Merchant, and a belief that education should celebrate each child\'s unique talents.',
       },
       {
         title: 'Founder message',
@@ -622,11 +622,11 @@ export const leadershipPages: Record<'founder' | 'proprietor', LeadershipPageCon
     sections: [
       {
         title: 'Profile summary',
-        body: 'Eniola Adetela brings heartfelt passion to her role at Impetus Integrated Learning Academy. The source copy describes a rich background in Physics Education and 15 years of dedicated service to children\'s learning.',
+        body: 'Eniola Adetela brings heartfelt passion to her role at Impetus Integrated Learning Academy, with a background in Physics Education and 15 years of dedicated service to children\'s learning.',
       },
       {
         title: 'Background and expertise',
-        body: 'The source profile states that Eniola holds Bachelor\'s and Master\'s degrees in Physics Education and has experience in curriculum development, instructional design, and strategic planning.',
+        body: 'Her profile lists Bachelor\'s and Master\'s degrees in Physics Education, along with experience in curriculum development, instructional design, and strategic planning.',
       },
       {
         title: 'Educational philosophy',
@@ -643,16 +643,16 @@ export const leadershipPages: Record<'founder' | 'proprietor', LeadershipPageCon
 };
 
 export const admissionsSteps: AdmissionsStep[] = [
-  { title: 'Admission standard', description: 'The source admissions copy says the process selects pupils/students who meet minimum academic standards and show qualities needed for success at Impetus Integrated Learning Academy.', publicationStatus: 'safe' },
-  { title: 'Application form', description: 'Source copy says families pay for or purchase application forms online or at the school premises, then fill and submit the form.', publicationStatus: 'confirmation-needed' },
-  { title: 'Application fee', description: 'Source copy lists an application fee of N5,000. This should remain confirmation-needed before publication.', publicationStatus: 'confirmation-needed' },
+  { title: 'Admission standard', description: 'The admissions process is intended to identify pupils and students who meet the school\'s academic expectations and are ready to thrive at Impetus Integrated Learning Academy.', publicationStatus: 'safe' },
+  { title: 'Application form', description: 'Families are expected to obtain, complete, and submit the application form through the school\'s approved process.', publicationStatus: 'confirmation-needed' },
+  { title: 'Application fee', description: 'An application fee may apply, but the exact public amount should be confirmed before publication.', publicationStatus: 'confirmation-needed' },
   { title: 'Admin submission', description: 'Completed application forms are submitted to the Admin office of the school.', publicationStatus: 'safe' },
   { title: 'Entry examination', description: 'The Impetus Integrated Learning Academy Entry Examination is described as a prerequisite for applicants, with dates listed on the school calendar and confirmations through the Admin hotline.', publicationStatus: 'safe' },
-  { title: 'Result notification', description: 'The source says results are sent to the applicant\'s parent via SMS, WhatsApp, or email.', publicationStatus: 'safe' },
+  { title: 'Result notification', description: 'Results are sent to the applicant\'s parent via SMS, WhatsApp, or email.', publicationStatus: 'safe' },
   { title: 'Provisional admission', description: 'Successful applicants are offered provisional admission and the admission letter is picked up in the Admin Office.', publicationStatus: 'safe' },
-  { title: 'Acceptance and payment', description: 'Acceptance letters are signed by parents/guardians and the admitted student. Fee payment references exist in source copy but final public wording needs confirmation.', publicationStatus: 'confirmation-needed' },
-  { title: 'Documents after acceptance', description: 'The source lists passport photograph, birth certificate copy, parent/guardian ID, medical report, teacher recommendations, school reports/transcripts, and evidence of application payment. Public form should not request these documents.', publicationStatus: 'confirmation-needed' },
-  { title: 'Bank details', description: 'Bank account information exists in the source export but is intentionally hidden pending explicit approval.', publicationStatus: 'hidden-pending-approval' },
+  { title: 'Acceptance and payment', description: 'Acceptance letters are signed by parents or guardians and the admitted student. Final payment wording should be confirmed before publication.', publicationStatus: 'confirmation-needed' },
+  { title: 'Documents after acceptance', description: 'Several supporting documents may be required after acceptance, but the final public list should be confirmed before the website requests them.', publicationStatus: 'confirmation-needed' },
+  { title: 'Bank details', description: 'Payment account information is not published here and requires explicit approval before production use.', publicationStatus: 'hidden-pending-approval' },
 ];
 
 export function getCurriculumPage(slug: keyof typeof curriculumPages) {
@@ -780,7 +780,7 @@ export const sourceCoverage: SourceCoverageItem[] = [
     sourceSections: ['Programs', 'Curriculum focus', 'FAQ', 'Testimonials'],
     destinations: ['/secondary-school/senior-secondary/arts', '/academics'],
     status: 'confirmation-needed',
-    notes: 'Arts pathway content is migrated. Source says Art; public label currently uses Arts pending confirmation.',
+    notes: 'Arts pathway content is tracked. Confirm final public label: Art or Arts.',
   },
   {
     sourcePage: 'SSS Curriculum-Commercial',
@@ -816,17 +816,17 @@ export const extendedPages: Record<string, PageSectionSet> = {
     sections: [
       {
         title: 'What the academy does',
-        body: 'The source copy describes an outstanding learning environment rooted in integrity, academic excellence, and strong moral values. Information and Communication Technology is deployed for effective teaching and learning, with an emphasis on helping students stand out wherever they find themselves.',
+        body: 'Impetus presents a learning environment rooted in integrity, academic excellence, and strong moral values. Technology supports teaching and learning, while the wider school culture encourages students to stand with confidence wherever they find themselves.',
       },
       {
         title: 'Educational approach',
-        body: 'The academy follows a comprehensive approach that combines technology with traditional curriculum in a blended learning environment, particularly across mathematics, science, and art.',
+        body: 'The academy blends strong classroom teaching with thoughtful technology use, especially across mathematics, science, art, and practical learning.',
       },
       {
         title: 'Vision and mission',
         items: [
           'Vision: To promote a balanced use of technology that motivates scholars to develop deeper conceptual understanding, ask meaningful questions, and cultivate transferable skills.',
-          'Mission: To help society build essential skills that translate meaningfully into work and civic life.',
+          'Mission: To help learners build essential skills that translate meaningfully into school, life, and the future.',
         ],
       },
     ],
@@ -834,11 +834,11 @@ export const extendedPages: Record<string, PageSectionSet> = {
   story: {
     eyebrow: 'Our Story',
     heroTitle: 'From three students to a growing academy community.',
-    summary: 'The school history is preserved from the supplied source copy, with uncertain naming and phrasing marked for confirmation.',
+    summary: 'The school story is presented with care, while a few naming details remain marked for confirmation.',
     sections: [
       {
         title: 'Beginning',
-        body: 'The source copy states that the school began as an offshoot of Impetus Tutorial College, Charity Road, New Oko-Oba Area of Lagos, and commenced operation on 10 September 2018.',
+        body: 'The school began as an offshoot of Impetus Tutorial College, Charity Road, New Oko-Oba Area of Lagos, and commenced operation on 10 September 2018.',
       },
       {
         title: 'Early growth',
@@ -846,7 +846,7 @@ export const extendedPages: Record<string, PageSectionSet> = {
       },
       {
         title: 'Primary arm',
-        body: 'The source copy says the primary arm was established in September 2023 to cater for well-rounded primary education and to support future leaders through academic excellence and character development.',
+        body: 'The primary arm was established in September 2023 to provide well-rounded primary education shaped by academic excellence and character development.',
       },
       {
         title: 'Teaching approach',
@@ -858,20 +858,20 @@ export const extendedPages: Record<string, PageSectionSet> = {
         ],
       },
     ],
-    confirmationNeeded: ['Confirm exact official name at inception.', 'Confirm how to present Impetus College as a historical name.', 'Review source phrasing around moral values and moral sanctity before final publication.'],
+    confirmationNeeded: ['Confirm exact official name at inception.', 'Confirm how to present Impetus College as a historical name.', 'Review final wording around moral values before publication.'],
   },
   life: {
     eyebrow: 'Life at Impetus',
     heroTitle: 'Learning beyond the classroom, pending approved imagery.',
-    summary: 'The school-life page is shaped around the supplied methodology, gallery invitation, practical learning, technology, extracurriculars, and community copy.',
+    summary: 'Life at Impetus is shaped by practical learning, technology-supported teaching, extracurricular opportunities, and a connected school community.',
     sections: [
       {
         title: 'Activity-based learning',
-        body: 'The source copy says Impetus strictly adopts an activity-based system for lessons, using diagrams, audio-visual resources, and practical examples so teachers and scholars participate effectively in the learning process.',
+        body: 'Impetus uses an activity-based lesson system with diagrams, audio-visual resources, and practical examples so teachers and learners can participate actively in the learning process.',
       },
       {
         title: 'Extracurricular development',
-        body: 'The methodology copy describes extracurricular activities including sports, arts, music, and clubs, giving students opportunities to explore interests and develop well-rounded personalities.',
+        body: 'Extracurricular activities include sports, arts, music, and clubs, giving students opportunities to explore interests and develop well-rounded personalities.',
       },
       {
         title: 'Community rhythm',
@@ -882,7 +882,7 @@ export const extendedPages: Record<string, PageSectionSet> = {
         items: [
           'Use approved school images only.',
           'Do not use Iru-VI civic imagery as Impetus production imagery.',
-          'Do not label a photograph Primary or Secondary unless the source metadata or client confirms it.',
+          'Do not label a photograph Primary or Secondary unless image metadata or the school team confirms it.',
         ],
       },
     ],
@@ -891,11 +891,11 @@ export const extendedPages: Record<string, PageSectionSet> = {
   gallery: {
     eyebrow: 'Gallery',
     heroTitle: 'A school photo archive prepared for approved assets.',
-    summary: 'The route is ready for a consent-aware gallery once school images and metadata are supplied.',
+    summary: 'The gallery is prepared for approved school images with clear captions, consent, and category details.',
     sections: [
       {
         title: 'Current gallery disposition',
-        body: 'The source Gallery page contains general gallery framing plus repeated curriculum, FAQ, and testimonial blocks. In this build, repeated FAQ and testimonial copy is centralized and the gallery page is reserved for real photo records.',
+        body: 'The gallery page is reserved for real school photo records. Repeated curriculum, FAQ, and testimonial content now lives elsewhere so this page can focus on approved images.',
       },
       {
         title: 'Metadata required',
@@ -913,10 +913,10 @@ export const extendedPages: Record<string, PageSectionSet> = {
   contact: {
     eyebrow: 'Contact',
     heroTitle: 'Reach Impetus Academy with the right enquiry.',
-    summary: 'Contact details are drawn from the supplied source copy and should be confirmed before launch.',
+    summary: 'Use the school contact details for admissions enquiries, visits, and general communication.',
     sections: [
       {
-        title: 'Published contact details from source',
+        title: 'Published contact details',
         items: [
           'Address: 73 Bola Ahmed Tinubu Street, formerly Agbado Ijaye Road, Ijaye, Lagos.',
           'Phone: 07057553716.',
@@ -926,7 +926,7 @@ export const extendedPages: Record<string, PageSectionSet> = {
         ],
       },
       {
-        title: 'Form fields from source',
+        title: 'Enquiry form fields',
         items: ['Parent name', 'Parent phone', 'Parent email address', 'Child name', 'Child birthdate', 'Interested in'],
       },
     ],
@@ -941,4 +941,8 @@ export function getSourceCoverage() {
 export function getExtendedPage(slug: keyof typeof extendedPages) {
   return extendedPages[slug];
 }
+
+
+
+
 

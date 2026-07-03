@@ -10,7 +10,7 @@ export default function CurriculumDetailPage({ content }: { content: CurriculumP
   return (
     <>
       <PageHero eyebrow={content.eyebrow} title={content.title} subtitle={content.summary} ctaLabel="Begin Admissions Enquiry" ctaHref={admissionsHref} />
-      <Section title="Curriculum framework from supplied source copy." align="left">
+      <Section title="A clear look at the curriculum framework." align="left">
         <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(300px,0.4fr)]">
           <div className="grid gap-5">
             {content.sections.map((section) => (
@@ -27,16 +27,13 @@ export default function CurriculumDetailPage({ content }: { content: CurriculumP
           </div>
 
           <aside className="dark-panel h-fit rounded-[2rem] p-6 text-white sm:p-7">
-            <p className="font-mono text-[0.66rem] uppercase tracking-[0.22em] text-white/48">Source audit</p>
-            <h2 className="mt-4 text-2xl font-semibold tracking-[-0.04em]">Preserved, cleaned, not inflated.</h2>
-            <p className="mt-4 text-sm leading-relaxed text-white/70">This page condenses the supplied curriculum copy into scannable groups. It does not add age ranges, facilities, exam results, or unverified outcomes.</p>
-            <p className="mt-5 break-words font-mono text-[0.62rem] uppercase tracking-[0.16em] text-accent-300">Source: {content.sourceUrl}</p>
+            <p className="font-mono text-[0.66rem] uppercase tracking-[0.22em] text-white/48">Curriculum note</p>
+            <h2 className="mt-4 text-2xl font-semibold tracking-[-0.04em]">Clear, structured, and careful.</h2>
+            <p className="mt-4 text-sm leading-relaxed text-white/70">This overview organizes the curriculum into clear groups without adding unconfirmed age ranges, facilities, results, or promises.</p>
             {content.confirmationNeeded && (
               <div className="mt-6 rounded-[1.35rem] border border-accent-300/20 bg-accent-300/10 p-4">
-                <p className="font-mono text-[0.62rem] uppercase tracking-[0.18em] text-accent-200">Confirmation needed</p>
-                <ul className="mt-3 space-y-2 text-sm leading-relaxed text-white/72">
-                  {content.confirmationNeeded.map((item) => <li key={item}>- {item}</li>)}
-                </ul>
+                <p className="font-mono text-[0.62rem] uppercase tracking-[0.18em] text-accent-200">Details being checked</p>
+                <p className="mt-3 text-sm leading-relaxed text-white/72">Some curriculum labels or stage details are still being confirmed with the school team before final publication.</p>
               </div>
             )}
             <Link href="/academics" className="button-secondary mt-6">
@@ -49,5 +46,3 @@ export default function CurriculumDetailPage({ content }: { content: CurriculumP
     </>
   );
 }
-
-

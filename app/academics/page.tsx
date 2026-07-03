@@ -12,7 +12,7 @@ export default function AcademicsPage() {
 
   return (
     <>
-      <PageHero eyebrow="Academics" title="A balanced index of stages, skills, and pathways." subtitle="Academics gives Primary and Secondary curriculum routes equal visibility while centralizing repeated source content." />
+      <PageHero eyebrow="Academics" title="A balanced index of stages, skills, and pathways." subtitle="Academics gives Primary and Secondary curriculum routes equal visibility, with stage and pathway information gathered in one clear place." />
       <Section title="Learning stages." subtitle="Parents can reach every stage without digging through a generic Academic menu." align="left">
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
           {stages.map((stage) => <FeatureCard key={stage.href} title={stage.title} description={stage.summary} href={stage.href} ctaLabel="View page" />)}
@@ -31,4 +31,5 @@ export default function AcademicsPage() {
     </>
   );
 }
+
 
