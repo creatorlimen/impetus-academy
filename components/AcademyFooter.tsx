@@ -4,7 +4,7 @@ import { getSiteSettings } from '@/lib/api';
 
 export default function AcademyFooter() {
   const settings = getSiteSettings();
-  const year = new Date().getFullYear();
+  const year = 2026;
 
   return (
     <footer className="relative mt-24 overflow-hidden rounded-t-[3.5rem] bg-primary-950 text-white">
@@ -112,7 +112,4 @@ export default function AcademyFooter() {
     </footer>
   );
 }
-
-
-
 
