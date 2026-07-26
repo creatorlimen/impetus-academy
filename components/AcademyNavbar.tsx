@@ -1,5 +1,6 @@
 ﻿'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import { ChevronDown, Menu, X } from 'lucide-react';
@@ -95,8 +96,8 @@ export default function AcademyNavbar() {
   }, []);
 
   const shellClass = scrolled
-    ? 'border-white/55 bg-[rgba(248,243,235,0.84)] shadow-[0_20px_60px_rgba(4,10,19,0.14)] backdrop-blur-2xl'
-    : 'border-white/10 bg-primary-950/62 shadow-[0_18px_60px_rgba(4,10,19,0.22)] backdrop-blur-xl';
+    ? 'border-primary-100/80 bg-white/92 shadow-[0_18px_55px_rgba(6,77,117,0.12)] backdrop-blur-2xl'
+    : 'border-white/14 bg-primary-950/88 shadow-[0_18px_55px_rgba(5,70,108,0.28)] backdrop-blur-xl';
   const linkClass = scrolled
     ? 'text-primary-700 hover:bg-primary-100/70 hover:text-primary-950'
     : 'text-white/78 hover:bg-white/10 hover:text-white';
@@ -107,9 +108,16 @@ export default function AcademyNavbar() {
         <div className={`rounded-[2rem] border transition-all duration-300 ${shellClass}`}>
           <div className="flex items-center justify-between gap-4 px-4 py-3 md:px-6">
             <Link href="/" aria-label={`${settings.shortName} home`} className="flex shrink-0 items-center">
-              <div className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl border font-display text-2xl font-semibold ${scrolled ? 'border-primary-900 bg-primary-900 text-accent-300' : 'border-white/12 bg-white/10 text-accent-300'}`}>
-                I
-              </div>
+              <span className="flex h-14 w-28 items-center justify-center rounded-2xl border border-white/70 bg-white p-1.5 shadow-[0_8px_24px_rgba(5,70,108,0.16)] sm:w-32">
+                <Image
+                  src="/brand/impetus-academy-logo.png"
+                  alt=""
+                  width={1195}
+                  height={673}
+                  priority
+                  className="h-full w-full object-contain"
+                />
+              </span>
             </Link>
 
             <div className="ml-auto hidden items-center gap-1 xl:flex">

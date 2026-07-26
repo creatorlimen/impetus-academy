@@ -1,4 +1,5 @@
-﻿import Link from 'next/link';
+﻿import Image from 'next/image';
+import Link from 'next/link';
 import { Mail, MapPin, Phone } from 'lucide-react';
 import { getDivisionFooterNavigation, getGeneralFooterNavigation, getSiteSettings } from '@/lib/content';
 
@@ -11,7 +12,7 @@ export default function AcademyFooter() {
 
   return (
     <footer className="relative mt-24 overflow-hidden rounded-t-[3.5rem] bg-primary-950 text-white">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(203,160,82,0.14),transparent_30%),linear-gradient(180deg,rgba(255,255,255,0.02),transparent_35%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(232,117,18,0.18),transparent_30%),linear-gradient(180deg,rgba(56,175,224,0.12),transparent_40%)]" />
       <div className="relative mx-auto max-w-7xl px-6 py-16 md:py-20">
         <div className="flex flex-col gap-10 border-b border-white/10 pb-10 lg:flex-row lg:items-end lg:justify-between">
           <div className="max-w-2xl">
@@ -28,15 +29,15 @@ export default function AcademyFooter() {
             <p className="font-label text-[0.65rem] uppercase tracking-[0.14em] text-white/46">Admissions Contact</p>
             <div className="mt-5 space-y-4 text-sm text-white/76">
               <div className="flex items-start gap-3">
-                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-accent-300" />
+                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-accent-400" />
                 {settings.address}
               </div>
               <div className="flex items-start gap-3">
-                <Phone className="mt-0.5 h-4 w-4 shrink-0 text-accent-300" />
+                <Phone className="mt-0.5 h-4 w-4 shrink-0 text-accent-400" />
                 {settings.phones.join(' / ')}
               </div>
               <div className="flex items-start gap-3">
-                <Mail className="mt-0.5 h-4 w-4 shrink-0 text-accent-300" />
+                <Mail className="mt-0.5 h-4 w-4 shrink-0 text-accent-400" />
                 {settings.email}
               </div>
             </div>
@@ -45,14 +46,14 @@ export default function AcademyFooter() {
 
         <div className="grid grid-cols-1 gap-12 pt-10 md:grid-cols-[1.1fr_0.8fr_0.8fr_0.8fr]">
           <div>
-            <div className="flex items-center gap-3">
-              <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-white/10 bg-white/10 font-display text-2xl font-semibold text-accent-300">
-                I
-              </div>
-              <div>
-                <p className="font-label text-[0.62rem] uppercase tracking-[0.1em] text-white/48">{settings.shortName}</p>
-                <p className="text-lg font-semibold tracking-[-0.012em] text-white">{settings.name}</p>
-              </div>
+            <div className="inline-flex rounded-[1.75rem] bg-white p-4 shadow-[0_18px_48px_rgba(5,44,69,0.2)]">
+              <Image
+                src="/brand/impetus-academy-logo.png"
+                alt={settings.name}
+                width={1195}
+                height={673}
+                className="h-auto w-full max-w-[260px]"
+              />
             </div>
             <p className="mt-5 max-w-md text-sm leading-relaxed text-primary-100/66">
               A welcoming school community for Primary and Secondary students, with room to build character, confidence, knowledge, and practical skills.

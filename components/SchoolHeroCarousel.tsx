@@ -38,7 +38,7 @@ export default function SchoolHeroCarousel({ divisions, interval = 3000 }: Schoo
           key={division.id}
           className={`absolute inset-0 transition-opacity duration-700 ease-out ${index === current ? 'z-10 opacity-100' : 'z-0 opacity-0'}`}
         >
-          <div className={`absolute inset-0 ${division.id === 'primary' ? 'bg-[radial-gradient(circle_at_24%_24%,rgba(29,107,86,0.55),transparent_31%),linear-gradient(135deg,rgba(4,13,21,0.96),rgba(11,33,48,0.82))]' : 'bg-[radial-gradient(circle_at_74%_18%,rgba(47,111,159,0.55),transparent_31%),linear-gradient(135deg,rgba(4,13,21,0.96),rgba(11,33,48,0.82))]'}`} />
+          <div className={`absolute inset-0 ${division.id === 'primary' ? 'bg-[radial-gradient(circle_at_24%_24%,rgba(232,117,18,0.28),transparent_32%),linear-gradient(135deg,rgba(5,70,108,0.99),rgba(8,126,184,0.95))]' : 'bg-[radial-gradient(circle_at_76%_18%,rgba(56,175,224,0.4),transparent_32%),linear-gradient(135deg,rgba(5,70,108,0.99),rgba(8,126,184,0.95))]'}`} />
           <div className="absolute inset-0 bg-[linear-gradient(115deg,rgba(255,255,255,0.08)_0%,transparent_28%),linear-gradient(180deg,rgba(255,255,255,0.02),transparent_42%)]" />
           <div className="absolute inset-x-6 bottom-24 top-32 hidden rounded-[3rem] border border-white/8 bg-white/5 backdrop-blur-[2px] lg:block" />
         </div>
@@ -47,12 +47,12 @@ export default function SchoolHeroCarousel({ divisions, interval = 3000 }: Schoo
       <div className="relative z-20 mx-auto flex min-h-[calc(100dvh-6rem)] max-w-7xl flex-col justify-center px-6 py-20 md:min-h-[calc(100dvh-7rem)] md:py-28">
         <div className="grid gap-8 xl:grid-cols-[minmax(0,1.06fr)_minmax(340px,0.94fr)] xl:items-end">
           <div className="max-w-4xl animate-fade-in">
-            <span className="section-kicker border-white/10 bg-white/10 text-white/74 before:bg-accent-300">
+            <span className="section-kicker border-white/10 bg-white/10 text-white/74 before:bg-accent-400">
               Impetus Integrated Learning Academy
             </span>
             <h1 className="mt-6 text-[2.8rem] font-semibold leading-[1.02] tracking-[-0.025em] sm:text-[4rem] lg:text-[5.4rem]">
               One Academy.
-              <span className="font-display mt-1 block text-[0.94em] font-semibold text-accent-300">
+              <span className="font-display mt-1 block text-[0.94em] font-semibold text-accent-400">
                 Two schools. One community.
               </span>
             </h1>
