@@ -1,8 +1,6 @@
 ﻿'use client';
 
-import Link from 'next/link';
 import { useCallback, useEffect, useState } from 'react';
-import { ArrowRight } from 'lucide-react';
 import type { DivisionContent } from '@/lib/content';
 
 interface SchoolHeroCarouselProps {
@@ -64,14 +62,6 @@ export default function SchoolHeroCarousel({ divisions, interval = 3000 }: Schoo
             <p className="text-lg leading-relaxed text-white/78 sm:text-xl">
               From Primary School foundations to Secondary School choices, Impetus helps students build knowledge, character, confidence, practical skills, and a healthy relationship with technology.
             </p>
-            <div className="mt-7 grid grid-cols-2 gap-2 sm:gap-3">
-              {divisions.map((division) => (
-                <Link key={division.id} href={division.href} className="button-primary whitespace-nowrap px-2.5 text-[0.7rem] sm:px-4 sm:text-sm">
-                  Explore {division.label}
-                  <ArrowRight className="h-4 w-4" />
-                </Link>
-              ))}
-            </div>
           </div>
         </div>
       </div>
