@@ -8,7 +8,7 @@ export default function PersistentSchoolSelector({ divisions }: { divisions: Div
       <div className="mx-auto grid max-w-7xl gap-4 md:grid-cols-2">
         {divisions.map((division) => (
           <div key={division.id} className="surface-panel rounded-[2rem] p-5 sm:p-6">
-            <p className="font-label text-[0.62rem] font-semibold uppercase tracking-[0.13em] text-primary-500">
+            <p className="font-label text-[0.62rem] font-semibold uppercase tracking-[0.13em] text-accent-700">
               Explore our schools
             </p>
             <h2 className="mt-3 text-2xl font-semibold tracking-[-0.012em] text-card-foreground">
@@ -22,7 +22,7 @@ export default function PersistentSchoolSelector({ divisions }: { divisions: Div
                 Explore {division.label}
                 <ArrowRight className="h-4 w-4" />
               </Link>
-              <Link href={division.admissionsHref} className="button-link text-primary-500">
+              <Link href={division.admissionsHref} className="button-link text-accent-700">
                 Admissions
                 <ArrowRight className="h-4 w-4" />
               </Link>

@@ -17,7 +17,7 @@ export default function FaqAccordion({ faqs }: { faqs: FaqItem[] }) {
             aria-expanded={openIndex === index}
           >
             <span>{faq.question}</span>
-            <span className="font-label text-primary-500">{openIndex === index ? '-' : '+'}</span>
+            <span className="font-label text-accent-700">{openIndex === index ? '-' : '+'}</span>
           </button>
           {openIndex === index && (
             <p className="px-5 pb-5 text-sm leading-relaxed text-muted sm:text-base">

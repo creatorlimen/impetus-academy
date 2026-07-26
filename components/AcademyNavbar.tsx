@@ -11,7 +11,7 @@ function DesktopDropdown({ item, scrolled }: { item: NavigationItem; scrolled: b
   const timeout = useRef<number | null>(null);
   const triggerClass = scrolled
     ? 'text-primary-700 hover:bg-primary-100/70 hover:text-primary-950'
-    : 'text-white/78 hover:bg-white/10 hover:text-white';
+    : 'text-primary-950/78 hover:bg-white/45 hover:text-primary-950';
 
   const handleEnter = () => {
     if (timeout.current) clearTimeout(timeout.current);
@@ -97,10 +97,10 @@ export default function AcademyNavbar() {
 
   const shellClass = scrolled
     ? 'border-primary-100/80 bg-white/92 shadow-[0_18px_55px_rgba(6,77,117,0.12)] backdrop-blur-2xl'
-    : 'border-white/14 bg-primary-950/88 shadow-[0_18px_55px_rgba(5,70,108,0.28)] backdrop-blur-xl';
+    : 'border-primary-950/10 bg-[#FFF5E9]/96 shadow-[0_18px_55px_rgba(23,16,68,0.16)] backdrop-blur-xl';
   const linkClass = scrolled
     ? 'text-primary-700 hover:bg-primary-100/70 hover:text-primary-950'
-    : 'text-white/78 hover:bg-white/10 hover:text-white';
+    : 'text-primary-950/78 hover:bg-white/45 hover:text-primary-950';
 
   return (
     <nav className="fixed inset-x-0 top-0 z-[80] px-4 pt-4 md:px-6 md:pt-6" aria-label="Primary navigation">
@@ -108,7 +108,7 @@ export default function AcademyNavbar() {
         <div className={`rounded-[2rem] border transition-all duration-300 ${shellClass}`}>
           <div className="flex items-center justify-between gap-4 px-4 py-3 md:px-6">
             <Link href="/" aria-label={`${settings.shortName} home`} className="flex shrink-0 items-center">
-              <span className="flex h-14 w-28 items-center justify-center rounded-2xl border border-white/70 bg-white p-1.5 shadow-[0_8px_24px_rgba(5,70,108,0.16)] sm:w-32">
+              <span className="flex h-14 w-28 items-center justify-center rounded-2xl border border-white/70 bg-white p-1.5 shadow-[0_8px_24px_rgba(23,16,68,0.14)] sm:w-32">
                 <Image
                   src="/brand/impetus-academy-logo.png"
                   alt=""
@@ -148,7 +148,7 @@ export default function AcademyNavbar() {
             <button
               type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className={`rounded-full p-3 xl:hidden ${scrolled ? 'bg-primary-100/70 text-primary-900' : 'bg-white/10 text-white'}`}
+              className={`rounded-full p-3 xl:hidden ${scrolled ? 'bg-primary-100/70 text-primary-900' : 'bg-white/55 text-primary-950'}`}
               aria-label="Toggle menu"
               aria-expanded={mobileMenuOpen}
             >

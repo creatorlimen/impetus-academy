@@ -43,14 +43,14 @@ export default function ExtendedContentPage({ content, ctaLabel, ctaHref, childr
           </div>
 
           {content.aside && (
-            <aside className="dark-panel h-fit rounded-[2rem] p-6 text-white sm:p-7">
+            <aside className="dark-panel h-fit rounded-[2rem] p-6 text-primary-950 sm:p-7">
               {content.aside.eyebrow && (
-                <p className="font-label text-[0.66rem] uppercase tracking-[0.14em] text-white/48">
+                <p className="font-label text-[0.66rem] uppercase tracking-[0.14em] text-accent-700">
                   {content.aside.eyebrow}
                 </p>
               )}
               <h2 className="mt-4 text-2xl font-semibold tracking-[-0.012em]">{content.aside.title}</h2>
-              <p className="mt-4 text-sm leading-relaxed text-white/72">{content.aside.body}</p>
+              <p className="mt-4 text-sm leading-relaxed text-primary-950/72">{content.aside.body}</p>
               {content.aside.ctaLabel && content.aside.ctaHref && (
                 <Link href={content.aside.ctaHref} className="button-secondary mt-6">
                   {content.aside.ctaLabel}

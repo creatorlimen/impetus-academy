@@ -23,7 +23,7 @@ export default function AdmissionsPage() {
         <div className="grid gap-5 md:grid-cols-2">
           {steps.map((step, index) => (
             <article key={step.title} className="surface-panel rounded-[2rem] p-6 sm:p-7">
-              <p className="font-label text-[0.62rem] uppercase tracking-[0.13em] text-primary-500">Step {index + 1}</p>
+              <p className="font-label text-[0.62rem] uppercase tracking-[0.13em] text-accent-700">Step {index + 1}</p>
               <h2 className="mt-4 text-2xl font-semibold tracking-[-0.012em] text-card-foreground">{step.title}</h2>
               <p className="mt-3 text-sm leading-relaxed text-muted sm:text-base">{step.description}</p>
             </article>
@@ -31,8 +31,8 @@ export default function AdmissionsPage() {
         </div>
       </Section>
       <Section title="Current requirements for your child." className="bg-surface/65" align="left">
-        <div className="dark-panel rounded-[2.5rem] p-6 text-white sm:p-8 lg:p-10">
-          <p className="max-w-3xl text-base leading-relaxed text-white/76 md:text-lg">
+        <div className="dark-panel rounded-[2.5rem] p-6 text-primary-950 sm:p-8 lg:p-10">
+          <p className="max-w-3xl text-base leading-relaxed text-primary-950/76 md:text-lg">
             Application documents, assessment dates, fees, and resumption requirements may vary by class and entry stage. Contact the admissions team for the current information before making payment or submitting documents.
           </p>
         </div>

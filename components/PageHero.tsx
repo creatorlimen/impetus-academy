@@ -11,8 +11,8 @@ interface PageHeroProps {
 
 export default function PageHero({ eyebrow, title, subtitle, ctaLabel, ctaHref }: PageHeroProps) {
   return (
-    <section className="relative -mt-24 overflow-hidden bg-primary-50 pt-24 text-primary-950 md:-mt-28 md:pt-28">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(232,117,18,0.13),transparent_30%),radial-gradient(circle_at_82%_24%,rgba(20,143,199,0.16),transparent_28%)]" />
+    <section className="relative -mt-24 overflow-hidden bg-[#FFF5E9] pt-24 text-primary-950 md:-mt-28 md:pt-28">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(232,117,18,0.13),transparent_30%),radial-gradient(circle_at_82%_24%,rgba(101,75,199,0.12),transparent_28%)]" />
       <div className="absolute inset-0 bg-[linear-gradient(115deg,rgba(255,255,255,0.82)_0%,transparent_38%),linear-gradient(180deg,rgba(255,255,255,0.25),transparent_55%)]" />
       <div className="relative mx-auto max-w-7xl px-6 pb-16 pt-20 animate-fade-in md:pb-24 md:pt-28">
         <span className="section-kicker">{eyebrow}</span>

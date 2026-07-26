@@ -35,11 +35,11 @@ export default function ContactSection({
             {contactItems.map((item) => (
               <div key={item.title} className="surface-panel rounded-[1.75rem] p-5">
                 <div className="flex items-start gap-4">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-[1.2rem] bg-primary-100/70 text-primary-700">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-[1.2rem] bg-accent-50 text-accent-700">
                     <item.icon className="h-5 w-5" />
                   </div>
                   <div>
-                    <p className="font-label text-[0.62rem] uppercase tracking-[0.14em] text-primary-500">{item.title}</p>
+                    <p className="font-label text-[0.62rem] uppercase tracking-[0.14em] text-accent-700">{item.title}</p>
                     <p className="mt-2 text-sm leading-relaxed text-card-foreground">{item.value}</p>
                   </div>
                 </div>
@@ -48,10 +48,10 @@ export default function ContactSection({
           </div>
         </div>
 
-        <div className="dark-panel rounded-[2.3rem] p-6 text-white sm:p-8">
-          <p className="font-label text-[0.66rem] uppercase tracking-[0.14em] text-white/48">Admissions and school visits</p>
+        <div className="dark-panel rounded-[2.3rem] p-6 text-primary-950 sm:p-8">
+          <p className="font-label text-[0.66rem] uppercase tracking-[0.14em] text-accent-700">Admissions and school visits</p>
           <h3 className="mt-4 text-3xl font-semibold tracking-[-0.015em]">Start with a conversation.</h3>
-          <p className="mt-4 max-w-xl text-base leading-relaxed text-white/72">
+          <p className="mt-4 max-w-xl text-base leading-relaxed text-primary-950/72">
             The school team can help you understand the current application process, arrange a suitable visit, or direct your question to the right person.
           </p>
           <div className="mt-7 flex flex-wrap gap-3">

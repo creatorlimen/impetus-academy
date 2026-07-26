@@ -26,14 +26,14 @@ export default function CurriculumDetailPage({ content }: { content: CurriculumP
             ))}
           </div>
 
-          <aside className="dark-panel h-fit rounded-[2rem] p-6 text-white sm:p-7">
-            <p className="font-label text-[0.66rem] uppercase tracking-[0.14em] text-white/48">
+          <aside className="dark-panel h-fit rounded-[2rem] p-6 text-primary-950 sm:p-7">
+            <p className="font-label text-[0.66rem] uppercase tracking-[0.14em] text-accent-700">
               {content.aside?.eyebrow ?? 'Learning at Impetus'}
             </p>
             <h2 className="mt-4 text-2xl font-semibold tracking-[-0.012em]">
               {content.aside?.title ?? 'Learning that grows with every stage.'}
             </h2>
-            <p className="mt-4 text-sm leading-relaxed text-white/72">
+            <p className="mt-4 text-sm leading-relaxed text-primary-950/72">
               {content.aside?.body ?? 'Lessons combine subject knowledge, regular practice, practical activities, and feedback to help students make steady progress.'}
             </p>
             <Link href="/academics" className="button-secondary mt-6">

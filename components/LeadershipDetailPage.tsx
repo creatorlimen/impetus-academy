@@ -8,11 +8,11 @@ export default function LeadershipDetailPage({ content }: { content: LeadershipP
       <PageHero eyebrow={content.eyebrow} title={content.title} subtitle={content.summary} ctaLabel="Contact the School" ctaHref="/contact" />
       <Section align="left">
         <div className="grid gap-6 lg:grid-cols-[0.75fr_1.25fr]">
-          <aside className="dark-panel flex min-h-[360px] items-end rounded-[2.5rem] p-6 text-white sm:p-8">
+          <aside className="dark-panel flex min-h-[360px] items-end rounded-[2.5rem] p-6 text-primary-950 sm:p-8">
             <div>
-              <p className="font-label text-[0.68rem] uppercase tracking-[0.14em] text-white/48">{content.role}</p>
+              <p className="font-label text-[0.68rem] uppercase tracking-[0.14em] text-accent-700">{content.role}</p>
               <h2 className="mt-4 text-3xl font-semibold tracking-[-0.015em]">{content.name}</h2>
-              <p className="mt-4 text-sm leading-relaxed text-white/72">
+              <p className="mt-4 text-sm leading-relaxed text-primary-950/72">
                 Serving the Impetus community through educational leadership, care, and a commitment to every learner’s growth.
               </p>
             </div>
