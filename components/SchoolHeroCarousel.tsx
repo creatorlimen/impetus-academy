@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useCallback, useEffect, useState } from 'react';
-import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import type { DivisionContent } from '@/lib/content';
 
 interface SchoolHeroCarouselProps {
@@ -18,9 +18,6 @@ export default function SchoolHeroCarousel({ divisions, interval = 3000 }: Schoo
     setCurrent((prev) => (prev + 1) % divisions.length);
   }, [divisions.length]);
 
-  const previous = useCallback(() => {
-    setCurrent((prev) => (prev - 1 + divisions.length) % divisions.length);
-  }, [divisions.length]);
 
   useEffect(() => {
     if (paused) return;
@@ -49,7 +46,7 @@ export default function SchoolHeroCarousel({ divisions, interval = 3000 }: Schoo
         </div>
       ))}
 
-      <div className="relative z-20 mx-auto flex min-h-[calc(100dvh-6rem)] max-w-7xl flex-col justify-end px-6 pb-28 pt-20 md:min-h-[calc(100dvh-7rem)] md:pb-32 md:pt-28 lg:pb-28">
+      <div className="relative z-20 mx-auto flex min-h-[calc(100dvh-6rem)] max-w-7xl flex-col justify-center px-6 py-20 md:min-h-[calc(100dvh-7rem)] md:py-28">
         <div className="grid gap-8 xl:grid-cols-[minmax(0,1.06fr)_minmax(340px,0.94fr)] xl:items-end">
           <div className="max-w-4xl animate-fade-in">
             <span className="section-kicker border-white/10 bg-white/10 text-white/74 before:bg-accent-300">
@@ -61,69 +58,24 @@ export default function SchoolHeroCarousel({ divisions, interval = 3000 }: Schoo
                 Two schools. One community.
               </span>
             </h1>
-            <p className="mt-6 max-w-2xl text-base leading-relaxed text-primary-100/84 sm:text-lg md:text-xl">
-              From Primary School foundations to Secondary School choices, Impetus helps students build knowledge, character, confidence, practical skills, and a healthy relationship with technology.
-            </p>
           </div>
 
           <div className="dark-panel rounded-[2.35rem] p-5 text-white sm:p-7 animate-slide-up">
-            <p className="font-label text-[0.66rem] uppercase tracking-[0.14em] text-white/50">
-              {divisions[current].eyebrow}
+            <p className="text-lg leading-relaxed text-white/78 sm:text-xl">
+              From Primary School foundations to Secondary School choices, Impetus helps students build knowledge, character, confidence, practical skills, and a healthy relationship with technology.
             </p>
-            <h2 className="mt-4 text-3xl font-semibold tracking-[-0.015em] sm:text-4xl">
-              {divisions[current].headline}
-            </h2>
-            <p className="mt-4 text-base leading-relaxed text-white/72">
-              {divisions[current].summary}
-            </p>
-            <div className="mt-7 flex flex-wrap gap-3">
-              <Link href={divisions[current].href} className="button-primary">
-                Explore {divisions[current].label}
-                <ArrowRight className="h-4 w-4" />
-              </Link>
-              <Link href={divisions[current].admissionsHref} className="button-secondary">
-                Admissions
-              </Link>
+            <div className="mt-7 grid grid-cols-2 gap-2 sm:gap-3">
+              {divisions.map((division) => (
+                <Link key={division.id} href={division.href} className="button-primary whitespace-nowrap px-2.5 text-[0.7rem] sm:px-4 sm:text-sm">
+                  Explore {division.label}
+                  <ArrowRight className="h-4 w-4" />
+                </Link>
+              ))}
             </div>
           </div>
         </div>
       </div>
 
-      <div className="absolute inset-x-0 bottom-6 z-30 px-6 md:bottom-8">
-        <div className="mx-auto flex max-w-7xl flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-          <div className="grid grid-cols-2 gap-3 sm:flex">
-            {divisions.map((division, index) => (
-              <button
-                key={division.id}
-                type="button"
-                onClick={() => setCurrent(index)}
-                className={`rounded-full border px-4 py-3 text-left font-label text-[0.62rem] font-semibold uppercase tracking-[0.1em] backdrop-blur-sm ${index === current ? 'border-accent-300 bg-accent-300 text-primary-950' : 'border-white/12 bg-white/10 text-white hover:bg-white/18'}`}
-              >
-                {division.label}
-              </button>
-            ))}
-          </div>
-
-          <div className="flex items-center justify-between gap-2 sm:justify-end">
-            <button
-              type="button"
-              onClick={previous}
-              aria-label="Previous school division"
-              className="flex h-11 w-11 items-center justify-center rounded-full border border-white/12 bg-white/10 text-white backdrop-blur-sm hover:bg-white/18"
-            >
-              <ChevronLeft className="h-5 w-5" />
-            </button>
-            <button
-              type="button"
-              onClick={next}
-              aria-label="Next school division"
-              className="flex h-11 w-11 items-center justify-center rounded-full border border-white/12 bg-white/10 text-white backdrop-blur-sm hover:bg-white/18"
-            >
-              <ChevronRight className="h-5 w-5" />
-            </button>
-          </div>
-        </div>
-      </div>
     </section>
   );
 }
