@@ -13,16 +13,16 @@ export default function ConfirmationNeededPage() {
         <div className="grid gap-4 md:grid-cols-2">
           {settings.uncertainFacts.map((fact) => (
             <article key={fact} className="surface-panel rounded-[1.75rem] p-5">
-              <p className="font-mono text-[0.62rem] uppercase tracking-[0.2em] text-school-rose">Confirmation needed</p>
+              <p className="font-label text-[0.62rem] uppercase tracking-[0.13em] text-school-rose">Confirmation needed</p>
               <p className="mt-3 text-base leading-relaxed text-muted">{fact}</p>
             </article>
           ))}
           <article className="dark-panel rounded-[1.75rem] p-5 text-white">
-            <p className="font-mono text-[0.62rem] uppercase tracking-[0.2em] text-accent-300">Admissions sensitive content</p>
+            <p className="font-label text-[0.62rem] uppercase tracking-[0.13em] text-accent-300">Admissions sensitive content</p>
             <p className="mt-3 text-base leading-relaxed text-white/72">Bank details, fee publication, application fee, boarding language, and document-upload/request handling require written approval before production use.</p>
           </article>
           <article className="dark-panel rounded-[1.75rem] p-5 text-white">
-            <p className="font-mono text-[0.62rem] uppercase tracking-[0.2em] text-accent-300">Images</p>
+            <p className="font-label text-[0.62rem] uppercase tracking-[0.13em] text-accent-300">Images</p>
             <p className="mt-3 text-base leading-relaxed text-white/72">Logo, founder portrait, proprietor portrait, Primary hero image, Secondary hero image, gallery images, and consent/classification metadata are still required.</p>
           </article>
         </div>

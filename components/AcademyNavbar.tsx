@@ -25,7 +25,7 @@ function DesktopDropdown({ item, scrolled }: { item: NavigationItem; scrolled: b
     <div className="relative z-[90]" onMouseEnter={handleEnter} onMouseLeave={handleLeave}>
       <button
         type="button"
-        className={`inline-flex items-center gap-1 rounded-full px-3 py-2 font-mono text-[0.66rem] font-semibold uppercase tracking-[0.18em] transition-all duration-200 ${triggerClass}`}
+        className={`inline-flex items-center gap-1 rounded-full px-3 py-2 font-label text-[0.66rem] font-semibold uppercase tracking-[0.12em] transition-all duration-200 ${triggerClass}`}
         aria-expanded={open}
       >
         {item.label}
@@ -57,7 +57,7 @@ function MobileDropdown({ item, onNavigate }: { item: NavigationItem; onNavigate
       <button
         type="button"
         onClick={() => setOpen(!open)}
-        className="flex w-full items-center justify-between rounded-[1.15rem] px-4 py-3 font-mono text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-primary-700 hover:bg-primary-100/60 hover:text-primary-950"
+        className="flex w-full items-center justify-between rounded-[1.15rem] px-4 py-3 font-label text-[0.68rem] font-semibold uppercase tracking-[0.12em] text-primary-700 hover:bg-primary-100/60 hover:text-primary-950"
         aria-expanded={open}
       >
         {item.label}
@@ -107,14 +107,14 @@ export default function AcademyNavbar() {
         <div className={`rounded-[2rem] border transition-all duration-300 ${shellClass}`}>
           <div className="flex items-center justify-between gap-4 px-4 py-3 md:px-6">
             <Link href="/" className="flex min-w-0 items-center gap-3">
-              <div className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl border font-display text-2xl font-semibold italic ${scrolled ? 'border-primary-900 bg-primary-900 text-accent-300' : 'border-white/12 bg-white/10 text-accent-300'}`}>
+              <div className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl border font-display text-2xl font-semibold ${scrolled ? 'border-primary-900 bg-primary-900 text-accent-300' : 'border-white/12 bg-white/10 text-accent-300'}`}>
                 I
               </div>
               <div className="min-w-0 leading-tight">
-                <span className={`font-mono text-[0.6rem] uppercase tracking-[0.28em] ${scrolled ? 'text-primary-500' : 'text-white/55'}`}>
+                <span className={`font-label text-[0.6rem] uppercase tracking-[0.1em] ${scrolled ? 'text-primary-500' : 'text-white/55'}`}>
                   {settings.tagline}
                 </span>
-                <span className={`block truncate text-lg font-semibold tracking-[-0.04em] ${scrolled ? 'text-primary-950' : 'text-white'}`}>
+                <span className={`block truncate text-lg font-semibold tracking-[-0.012em] ${scrolled ? 'text-primary-950' : 'text-white'}`}>
                   {settings.shortName}
                 </span>
               </div>
@@ -128,7 +128,7 @@ export default function AcademyNavbar() {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className={`rounded-full px-3 py-2 font-mono text-[0.66rem] font-semibold uppercase tracking-[0.18em] transition-all duration-200 ${linkClass}`}
+                    className={`rounded-full px-3 py-2 font-label text-[0.66rem] font-semibold uppercase tracking-[0.12em] transition-all duration-200 ${linkClass}`}
                   >
                     {link.label}
                   </Link>
@@ -137,7 +137,7 @@ export default function AcademyNavbar() {
             </div>
 
             <div className="hidden items-center gap-2 xl:flex">
-              <a href={`tel:${settings.phones[0]}`} className={`inline-flex items-center gap-2 rounded-full px-3 py-2 font-mono text-[0.62rem] font-semibold uppercase tracking-[0.16em] ${linkClass}`}>
+              <a href={`tel:${settings.phones[0]}`} className={`inline-flex items-center gap-2 rounded-full px-3 py-2 font-label text-[0.62rem] font-semibold uppercase tracking-[0.1em] ${linkClass}`}>
                 <Phone className="h-3.5 w-3.5" />
                 Call
               </a>
@@ -169,7 +169,7 @@ export default function AcademyNavbar() {
                     key={link.href}
                     href={link.href}
                     onClick={() => setMobileMenuOpen(false)}
-                    className="block rounded-[1.15rem] px-4 py-3 font-mono text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-primary-700 hover:bg-primary-100/60 hover:text-primary-950"
+                    className="block rounded-[1.15rem] px-4 py-3 font-label text-[0.68rem] font-semibold uppercase tracking-[0.12em] text-primary-700 hover:bg-primary-100/60 hover:text-primary-950"
                   >
                     {link.label}
                   </Link>

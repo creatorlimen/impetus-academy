@@ -25,7 +25,7 @@ export default function Section({
         {title && (
           <div className={`mb-12 ${headerClass}`}>
             {eyebrow && <span className="section-kicker">{eyebrow}</span>}
-            <h2 className={`mt-6 text-4xl font-semibold tracking-[-0.045em] text-card-foreground md:text-[3.1rem] ${titleClass}`}>
+            <h2 className={`mt-6 text-4xl font-semibold tracking-[-0.015em] text-card-foreground md:text-[3.1rem] ${titleClass}`}>
               {title}
             </h2>
             {subtitle && (

@@ -16,7 +16,7 @@ export default function PageHero({ eyebrow, title, subtitle, ctaLabel, ctaHref }
       <div className="absolute inset-0 bg-[linear-gradient(115deg,rgba(255,255,255,0.08)_0%,transparent_30%),linear-gradient(180deg,rgba(255,255,255,0.02),transparent_42%)]" />
       <div className="relative mx-auto max-w-7xl px-6 pb-16 pt-20 animate-fade-in md:pb-24 md:pt-28">
         <span className="section-kicker border-white/10 bg-white/10 text-white/72 before:bg-accent-300">{eyebrow}</span>
-        <h1 className="mt-6 max-w-4xl text-4xl font-semibold leading-[0.95] tracking-[-0.05em] sm:text-5xl lg:text-[4.7rem]">
+        <h1 className="mt-6 max-w-4xl text-4xl font-semibold leading-[1.02] tracking-[-0.02em] sm:text-5xl lg:text-[4.7rem]">
           {title}
         </h1>
         {subtitle && <p className="mt-6 max-w-2xl text-lg leading-relaxed text-primary-100/84 md:text-xl">{subtitle}</p>}

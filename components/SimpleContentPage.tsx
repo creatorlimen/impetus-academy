@@ -24,8 +24,8 @@ export default function SimpleContentPage({ brief, ctaLabel = 'Contact the Schoo
             {children}
           </article>
           <aside className="dark-panel h-fit rounded-[2.2rem] p-6 text-white sm:p-7">
-            <p className="font-mono text-[0.66rem] uppercase tracking-[0.22em] text-white/48">Page note</p>
-            <h2 className="mt-4 text-2xl font-semibold tracking-[-0.04em]">Careful with the details.</h2>
+            <p className="font-label text-[0.66rem] uppercase tracking-[0.14em] text-white/48">Page note</p>
+            <h2 className="mt-4 text-2xl font-semibold tracking-[-0.012em]">Careful with the details.</h2>
             <p className="mt-4 text-sm leading-relaxed text-white/70">
               This page stays close to confirmed school information. Details still being checked are listed separately.
             </p>

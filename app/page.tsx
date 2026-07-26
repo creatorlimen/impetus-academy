@@ -47,8 +47,8 @@ export default function Home() {
           </div>
 
           <div className="dark-panel rounded-[2.5rem] p-6 text-white sm:p-8">
-            <p className="font-mono text-[0.68rem] uppercase tracking-[0.22em] text-white/48">Vision and Mission</p>
-            <h3 className="mt-5 text-3xl font-semibold tracking-[-0.045em]">Technology with balance, character with purpose.</h3>
+            <p className="font-label text-[0.68rem] uppercase tracking-[0.14em] text-white/48">Vision and Mission</p>
+            <h3 className="mt-5 text-3xl font-semibold tracking-[-0.015em]">Technology with balance, character with purpose.</h3>
             <p className="mt-5 text-sm leading-relaxed text-white/72 sm:text-base">
               Vision: To promote a balanced use of technology to motivate scholars to develop deeper conceptual understanding, ask meaningful questions, and cultivate transferable skills.
             </p>
@@ -91,8 +91,8 @@ export default function Home() {
         <div className="grid gap-6 lg:grid-cols-2">
           {divisions.map((division) => (
             <article key={division.id} className="dark-panel rounded-[2.5rem] p-6 text-white sm:p-8">
-              <p className="font-mono text-[0.68rem] uppercase tracking-[0.22em] text-white/48">{division.eyebrow}</p>
-              <h3 className="mt-5 text-3xl font-semibold tracking-[-0.045em] sm:text-4xl">{division.label}</h3>
+              <p className="font-label text-[0.68rem] uppercase tracking-[0.14em] text-white/48">{division.eyebrow}</p>
+              <h3 className="mt-5 text-3xl font-semibold tracking-[-0.015em] sm:text-4xl">{division.label}</h3>
               <p className="mt-4 text-base leading-relaxed text-white/72">{division.summary}</p>
               <div className="mt-7 flex flex-wrap gap-3">
                 <Link href={division.href} className="button-primary">Discover {division.label}</Link>
@@ -100,7 +100,7 @@ export default function Home() {
               </div>
               <div className="mt-8 grid gap-3 sm:grid-cols-2">
                 {division.stages.map((stage) => (
-                  <span key={stage} className="rounded-full border border-white/10 bg-white/8 px-4 py-3 font-mono text-[0.62rem] uppercase tracking-[0.18em] text-white/70">
+                  <span key={stage} className="rounded-full border border-white/10 bg-white/8 px-4 py-3 font-label text-[0.62rem] uppercase tracking-[0.12em] text-white/70">
                     {stage}
                   </span>
                 ))}
@@ -132,7 +132,7 @@ export default function Home() {
       >
         <div className="grid gap-6 lg:grid-cols-[0.8fr_1.2fr]">
           <div className="surface-panel rounded-[2.5rem] p-6 sm:p-8">
-            <h3 className="text-3xl font-semibold tracking-[-0.045em] text-card-foreground">Balanced curriculum access.</h3>
+            <h3 className="text-3xl font-semibold tracking-[-0.015em] text-card-foreground">Balanced curriculum access.</h3>
             <p className="mt-4 text-base leading-relaxed text-muted">
               Primary pages focus on Kindergarten and Elementary/Primary. Secondary pages expose Junior Secondary, Senior Secondary, and the Science, Arts, and Commercial pathways.
             </p>
@@ -144,7 +144,7 @@ export default function Home() {
           <div className="grid gap-4 sm:grid-cols-2">
             {curriculum.map((item) => (
               <article key={item.title} className="surface-panel rounded-[1.8rem] p-5">
-                <h3 className="text-xl font-semibold tracking-[-0.035em] text-card-foreground">{item.title}</h3>
+                <h3 className="text-xl font-semibold tracking-[-0.01em] text-card-foreground">{item.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-muted">{item.description}</p>
               </article>
             ))}
@@ -161,8 +161,8 @@ export default function Home() {
         <div className="grid gap-6 lg:grid-cols-[0.78fr_1.22fr]">
           <div className="dark-panel flex min-h-[320px] items-end rounded-[2.5rem] p-6 text-white sm:p-8">
             <div>
-              <p className="font-mono text-[0.68rem] uppercase tracking-[0.22em] text-white/48">Confirmation needed</p>
-              <h3 className="mt-4 text-3xl font-semibold tracking-[-0.045em]">Founder portrait and public title.</h3>
+              <p className="font-label text-[0.68rem] uppercase tracking-[0.14em] text-white/48">Confirmation needed</p>
+              <h3 className="mt-4 text-3xl font-semibold tracking-[-0.015em]">Founder portrait and public title.</h3>
             </div>
           </div>
           <div className="surface-panel rounded-[2.5rem] p-6 sm:p-8 lg:p-10">
@@ -182,7 +182,7 @@ export default function Home() {
           {testimonials.map((testimonial) => (
             <article key={testimonial.quote} className="surface-panel rounded-[2rem] p-6 sm:p-7">
               <p className="text-base leading-relaxed text-muted">“{testimonial.quote}”</p>
-              <p className="mt-6 font-mono text-[0.62rem] uppercase tracking-[0.2em] text-primary-500">{testimonial.attribution}</p>
+              <p className="mt-6 font-label text-[0.62rem] uppercase tracking-[0.13em] text-primary-500">{testimonial.attribution}</p>
             </article>
           ))}
         </div>
@@ -192,8 +192,8 @@ export default function Home() {
         <div className="dark-panel mx-auto max-w-7xl rounded-[2.75rem] p-6 text-white sm:p-8 lg:p-10">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
             <div className="max-w-3xl">
-              <p className="font-mono text-[0.68rem] uppercase tracking-[0.22em] text-white/48">Admissions</p>
-              <h2 className="mt-5 text-3xl font-semibold tracking-[-0.045em] sm:text-4xl lg:text-[3rem]">
+              <p className="font-label text-[0.68rem] uppercase tracking-[0.14em] text-white/48">Admissions</p>
+              <h2 className="mt-5 text-3xl font-semibold tracking-[-0.015em] sm:text-4xl lg:text-[3rem]">
                 Start with an enquiry, then confirm the right next step.
               </h2>
               <p className="mt-5 max-w-2xl text-base leading-relaxed text-white/72 md:text-lg">

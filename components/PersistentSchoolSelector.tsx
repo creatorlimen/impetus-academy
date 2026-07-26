@@ -8,10 +8,10 @@ export default function PersistentSchoolSelector({ divisions }: { divisions: Div
       <div className="mx-auto grid max-w-7xl gap-4 md:grid-cols-2">
         {divisions.map((division) => (
           <div key={division.id} className="surface-panel rounded-[2rem] p-5 sm:p-6">
-            <p className="font-mono text-[0.62rem] font-semibold uppercase tracking-[0.2em] text-primary-500">
+            <p className="font-label text-[0.62rem] font-semibold uppercase tracking-[0.13em] text-primary-500">
               Direct entry
             </p>
-            <h2 className="mt-3 text-2xl font-semibold tracking-[-0.04em] text-card-foreground">
+            <h2 className="mt-3 text-2xl font-semibold tracking-[-0.012em] text-card-foreground">
               {division.label}
             </h2>
             <p className="mt-2 text-sm leading-relaxed text-muted sm:text-base">

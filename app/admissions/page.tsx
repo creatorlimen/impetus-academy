@@ -16,11 +16,11 @@ export default function AdmissionsPage() {
         <div className="grid gap-5 md:grid-cols-2">
           {steps.map((step, index) => (
             <article key={step.title} className={`rounded-[2rem] p-6 sm:p-7 ${step.publicationStatus === 'hidden-pending-approval' ? 'dark-panel text-white' : 'surface-panel'}`}>
-              <p className={`font-mono text-[0.62rem] uppercase tracking-[0.2em] ${step.publicationStatus === 'hidden-pending-approval' ? 'text-accent-300' : 'text-primary-500'}`}>Step {index + 1}</p>
-              <h2 className={`mt-4 text-2xl font-semibold tracking-[-0.04em] ${step.publicationStatus === 'hidden-pending-approval' ? 'text-white' : 'text-card-foreground'}`}>{step.title}</h2>
+              <p className={`font-label text-[0.62rem] uppercase tracking-[0.13em] ${step.publicationStatus === 'hidden-pending-approval' ? 'text-accent-300' : 'text-primary-500'}`}>Step {index + 1}</p>
+              <h2 className={`mt-4 text-2xl font-semibold tracking-[-0.012em] ${step.publicationStatus === 'hidden-pending-approval' ? 'text-white' : 'text-card-foreground'}`}>{step.title}</h2>
               <p className={`mt-3 text-sm leading-relaxed sm:text-base ${step.publicationStatus === 'hidden-pending-approval' ? 'text-white/72' : 'text-muted'}`}>{step.description}</p>
               {step.publicationStatus && step.publicationStatus !== 'safe' && (
-                <p className={`mt-5 font-mono text-[0.6rem] uppercase tracking-[0.18em] ${step.publicationStatus === 'hidden-pending-approval' ? 'text-white/48' : 'text-school-rose'}`}>{step.publicationStatus.replaceAll('-', ' ')}</p>
+                <p className={`mt-5 font-label text-[0.6rem] uppercase tracking-[0.12em] ${step.publicationStatus === 'hidden-pending-approval' ? 'text-white/48' : 'text-school-rose'}`}>{step.publicationStatus.replaceAll('-', ' ')}</p>
               )}
             </article>
           ))}

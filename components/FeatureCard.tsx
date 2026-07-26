@@ -20,7 +20,7 @@ export default function FeatureCard({ title, description, href, ctaLabel = 'Read
           </div>
         )}
       </div>
-      <h3 className={`mt-8 text-2xl font-semibold tracking-[-0.04em] ${dark ? 'text-white' : 'text-card-foreground'}`}>{title}</h3>
+      <h3 className={`mt-8 text-2xl font-semibold tracking-[-0.012em] ${dark ? 'text-white' : 'text-card-foreground'}`}>{title}</h3>
       <p className={`mt-3 text-sm leading-relaxed sm:text-base ${dark ? 'text-white/70' : 'text-muted'}`}>{description}</p>
       {href && (
         <span className={`button-link mt-6 ${dark ? 'text-accent-300 hover:text-white' : ''}`}>

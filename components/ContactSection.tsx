@@ -27,7 +27,7 @@ export default function ContactSection({
     <Section title={title} eyebrow={eyebrow || undefined} subtitle={subtitle} className={className} align="left">
       <div className="grid max-w-7xl grid-cols-1 gap-8 lg:grid-cols-[0.9fr_1.1fr]">
         <div>
-          <h3 className="text-2xl font-semibold tracking-[-0.04em] text-card-foreground">School contact details</h3>
+          <h3 className="text-2xl font-semibold tracking-[-0.012em] text-card-foreground">School contact details</h3>
           <p className="mt-3 max-w-lg text-base leading-relaxed text-muted">
             Use these details to reach the school team for admissions enquiries, visits, and general questions.
           </p>
@@ -39,7 +39,7 @@ export default function ContactSection({
                     <item.icon className="h-5 w-5" />
                   </div>
                   <div>
-                    <p className="font-mono text-[0.62rem] uppercase tracking-[0.22em] text-primary-500">{item.title}</p>
+                    <p className="font-label text-[0.62rem] uppercase tracking-[0.14em] text-primary-500">{item.title}</p>
                     <p className="mt-2 text-sm leading-relaxed text-card-foreground">{item.value}</p>
                   </div>
                 </div>
@@ -51,8 +51,8 @@ export default function ContactSection({
         <div className="glass-panel rounded-[2.3rem] p-6 sm:p-8">
           <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <div>
-              <p className="font-mono text-[0.62rem] uppercase tracking-[0.22em] text-primary-500">Admissions Desk</p>
-              <h3 className="mt-3 text-2xl font-semibold tracking-[-0.04em] text-card-foreground">Book an admission enquiry</h3>
+              <p className="font-label text-[0.62rem] uppercase tracking-[0.14em] text-primary-500">Admissions Desk</p>
+              <h3 className="mt-3 text-2xl font-semibold tracking-[-0.012em] text-card-foreground">Book an admission enquiry</h3>
             </div>
             <p className="max-w-sm text-sm leading-relaxed text-muted">
               Share the essentials, and the admissions team can guide you on the next step once enquiry handling is connected.

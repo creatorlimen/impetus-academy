@@ -1,25 +1,19 @@
 ﻿import type { Metadata } from 'next';
-import { Cormorant_Garamond, IBM_Plex_Mono, Manrope } from 'next/font/google';
+import { Fredoka, Mulish } from 'next/font/google';
 import AcademyFooter from '@/components/AcademyFooter';
 import AcademyNavbar from '@/components/AcademyNavbar';
 import './globals.css';
 
-const manrope = Manrope({
+const mulish = Mulish({
   subsets: ['latin'],
   variable: '--font-sans',
+  display: 'swap',
 });
 
-const cormorant = Cormorant_Garamond({
+const fredoka = Fredoka({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-  style: ['normal', 'italic'],
   variable: '--font-display',
-});
-
-const plexMono = IBM_Plex_Mono({
-  subsets: ['latin'],
-  weight: ['400', '500', '600'],
-  variable: '--font-mono',
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
@@ -39,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${manrope.variable} ${cormorant.variable} ${plexMono.variable} bg-shell text-card-foreground antialiased`}
+        className={`${mulish.variable} ${fredoka.variable} bg-shell text-card-foreground antialiased`}
       >
         <a href="#main-content" className="skip-link">
           Skip to content

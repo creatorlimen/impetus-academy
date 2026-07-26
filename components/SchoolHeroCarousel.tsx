@@ -55,9 +55,9 @@ export default function SchoolHeroCarousel({ divisions, interval = 3000 }: Schoo
             <span className="section-kicker border-white/10 bg-white/10 text-white/74 before:bg-accent-300">
               Impetus Integrated Learning Academy
             </span>
-            <h1 className="mt-6 text-[2.8rem] font-semibold leading-[0.95] tracking-[-0.055em] sm:text-[4rem] lg:text-[5.4rem]">
+            <h1 className="mt-6 text-[2.8rem] font-semibold leading-[1.02] tracking-[-0.025em] sm:text-[4rem] lg:text-[5.4rem]">
               One Academy.
-              <span className="font-display mt-1 block text-[0.94em] font-medium italic text-accent-300">
+              <span className="font-display mt-1 block text-[0.94em] font-semibold text-accent-300">
                 Two learning journeys.
               </span>
             </h1>
@@ -67,10 +67,10 @@ export default function SchoolHeroCarousel({ divisions, interval = 3000 }: Schoo
           </div>
 
           <div className="dark-panel rounded-[2.35rem] p-5 text-white sm:p-7 animate-slide-up">
-            <p className="font-mono text-[0.66rem] uppercase tracking-[0.22em] text-white/50">
+            <p className="font-label text-[0.66rem] uppercase tracking-[0.14em] text-white/50">
               {divisions[current].eyebrow}
             </p>
-            <h2 className="mt-4 text-3xl font-semibold tracking-[-0.045em] sm:text-4xl">
+            <h2 className="mt-4 text-3xl font-semibold tracking-[-0.015em] sm:text-4xl">
               {divisions[current].headline}
             </h2>
             <p className="mt-4 text-base leading-relaxed text-white/72">
@@ -97,7 +97,7 @@ export default function SchoolHeroCarousel({ divisions, interval = 3000 }: Schoo
                 key={division.id}
                 type="button"
                 onClick={() => setCurrent(index)}
-                className={`rounded-full border px-4 py-3 text-left font-mono text-[0.62rem] font-semibold uppercase tracking-[0.16em] backdrop-blur-sm ${index === current ? 'border-accent-300 bg-accent-300 text-primary-950' : 'border-white/12 bg-white/10 text-white hover:bg-white/18'}`}
+                className={`rounded-full border px-4 py-3 text-left font-label text-[0.62rem] font-semibold uppercase tracking-[0.1em] backdrop-blur-sm ${index === current ? 'border-accent-300 bg-accent-300 text-primary-950' : 'border-white/12 bg-white/10 text-white hover:bg-white/18'}`}
               >
                 {division.label}
               </button>

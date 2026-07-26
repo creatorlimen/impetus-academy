@@ -24,29 +24,29 @@ export default function SourceAuditPage() {
             <article key={item.sourcePage} className="surface-panel rounded-[2rem] p-6 sm:p-7">
               <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
                 <div>
-                  <p className="font-mono text-[0.62rem] uppercase tracking-[0.2em] text-primary-500">{item.sourceUrl}</p>
-                  <h2 className="mt-3 text-2xl font-semibold tracking-[-0.04em] text-card-foreground">{item.sourcePage}</h2>
+                  <p className="font-label text-[0.62rem] uppercase tracking-[0.13em] text-primary-500">{item.sourceUrl}</p>
+                  <h2 className="mt-3 text-2xl font-semibold tracking-[-0.012em] text-card-foreground">{item.sourcePage}</h2>
                 </div>
-                <span className={`w-fit rounded-full px-3 py-2 font-mono text-[0.6rem] font-semibold uppercase tracking-[0.16em] ${statusClass[item.status]}`}>
+                <span className={`w-fit rounded-full px-3 py-2 font-label text-[0.6rem] font-semibold uppercase tracking-[0.1em] ${statusClass[item.status]}`}>
                   {item.status.replaceAll('-', ' ')}
                 </span>
               </div>
 
               <div className="mt-6 grid gap-5 lg:grid-cols-3">
                 <div>
-                  <h3 className="font-mono text-[0.62rem] uppercase tracking-[0.2em] text-muted-foreground">Source sections</h3>
+                  <h3 className="font-label text-[0.62rem] uppercase tracking-[0.13em] text-muted-foreground">Source sections</h3>
                   <ul className="mt-3 space-y-2 text-sm text-muted">
                     {item.sourceSections.map((section) => <li key={section}>- {section}</li>)}
                   </ul>
                 </div>
                 <div>
-                  <h3 className="font-mono text-[0.62rem] uppercase tracking-[0.2em] text-muted-foreground">Destinations</h3>
+                  <h3 className="font-label text-[0.62rem] uppercase tracking-[0.13em] text-muted-foreground">Destinations</h3>
                   <ul className="mt-3 space-y-2 text-sm text-muted">
                     {item.destinations.map((destination) => <li key={destination}>- {destination}</li>)}
                   </ul>
                 </div>
                 <div>
-                  <h3 className="font-mono text-[0.62rem] uppercase tracking-[0.2em] text-muted-foreground">Notes</h3>
+                  <h3 className="font-label text-[0.62rem] uppercase tracking-[0.13em] text-muted-foreground">Notes</h3>
                   <p className="mt-3 text-sm leading-relaxed text-muted">{item.notes}</p>
                 </div>
               </div>

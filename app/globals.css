@@ -118,6 +118,8 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: var(--font-display), "Arial Rounded MT Bold", system-ui, sans-serif;
+  font-variation-settings: "wdth" 100;
   text-wrap: balance;
 }
 
@@ -142,12 +144,14 @@ p {
   transform: translateY(0);
 }
 
+
 .font-display {
-  font-family: var(--font-display), Georgia, serif;
+  font-family: var(--font-display), "Arial Rounded MT Bold", system-ui, sans-serif;
 }
 
-.font-mono {
-  font-family: var(--font-mono), monospace;
+.font-label {
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-weight: 700;
 }
 
 .section-kicker {
@@ -158,10 +162,10 @@ p {
   border: 1px solid rgba(16, 41, 59, 0.12);
   background: rgba(255, 255, 255, 0.52);
   padding: 0.72rem 1rem;
-  font-family: var(--font-mono), monospace;
+  font-family: var(--font-sans), system-ui, sans-serif;
   font-size: 0.68rem;
-  font-weight: 600;
-  letter-spacing: 0.22em;
+  font-weight: 700;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: rgba(16, 41, 59, 0.78);
   backdrop-filter: blur(18px);
@@ -208,7 +212,7 @@ p {
   background: linear-gradient(135deg, var(--color-accent-300), var(--color-accent-500));
   padding: 0.95rem 1.35rem;
   color: var(--color-primary-950);
-  font-weight: 800;
+  font-weight: 700;
   box-shadow: 0 16px 36px rgba(180, 135, 63, 0.24);
 }
 
