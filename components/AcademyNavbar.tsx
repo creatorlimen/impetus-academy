@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
-import { ChevronDown, Menu, Phone, X } from 'lucide-react';
+import { ChevronDown, Menu, X } from 'lucide-react';
 import { getNavigation, getSiteSettings, type NavigationItem } from '@/lib/content';
 
 function DesktopDropdown({ item, scrolled }: { item: NavigationItem; scrolled: boolean }) {
@@ -106,17 +106,9 @@ export default function AcademyNavbar() {
       <div className="mx-auto flex max-w-7xl flex-col gap-3">
         <div className={`rounded-[2rem] border transition-all duration-300 ${shellClass}`}>
           <div className="flex items-center justify-between gap-4 px-4 py-3 md:px-6">
-            <Link href="/" className="flex min-w-0 items-center gap-3">
+            <Link href="/" aria-label={`${settings.shortName} home`} className="flex shrink-0 items-center">
               <div className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl border font-display text-2xl font-semibold ${scrolled ? 'border-primary-900 bg-primary-900 text-accent-300' : 'border-white/12 bg-white/10 text-accent-300'}`}>
                 I
-              </div>
-              <div className="min-w-0 leading-tight">
-                <span className={`font-label text-[0.6rem] uppercase tracking-[0.1em] ${scrolled ? 'text-primary-500' : 'text-white/55'}`}>
-                  {settings.tagline}
-                </span>
-                <span className={`block truncate text-lg font-semibold tracking-[-0.012em] ${scrolled ? 'text-primary-950' : 'text-white'}`}>
-                  {settings.shortName}
-                </span>
               </div>
             </Link>
 
@@ -137,10 +129,9 @@ export default function AcademyNavbar() {
             </div>
 
             <div className="hidden items-center gap-2 xl:flex">
-              <a href={`tel:${settings.phones[0]}`} className={`inline-flex items-center gap-2 rounded-full px-3 py-2 font-label text-[0.62rem] font-semibold uppercase tracking-[0.1em] ${linkClass}`}>
-                <Phone className="h-3.5 w-3.5" />
-                Call
-              </a>
+              <Link href="/gallery" className={`inline-flex items-center rounded-full px-3 py-2 font-label text-[0.62rem] font-semibold uppercase tracking-[0.1em] ${linkClass}`}>
+                Gallery
+              </Link>
               <Link href="/admissions" className="button-primary px-4 py-2.5 text-sm">
                 Apply Now
               </Link>
