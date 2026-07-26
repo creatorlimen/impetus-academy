@@ -1,10 +1,13 @@
 ﻿import Link from 'next/link';
 import { Mail, MapPin, Phone } from 'lucide-react';
-import { getSiteSettings } from '@/lib/api';
+import { getDivisionFooterNavigation, getGeneralFooterNavigation, getSiteSettings } from '@/lib/content';
 
 export default function AcademyFooter() {
   const settings = getSiteSettings();
   const year = 2026;
+  const primaryNavigation = getDivisionFooterNavigation('primary');
+  const secondaryNavigation = getDivisionFooterNavigation('secondary');
+  const generalNavigation = getGeneralFooterNavigation();
 
   return (
     <footer className="relative mt-24 overflow-hidden rounded-t-[3.5rem] bg-primary-950 text-white">
@@ -59,12 +62,7 @@ export default function AcademyFooter() {
           <div>
             <h3 className="font-mono text-[0.68rem] font-medium uppercase tracking-[0.24em] text-white/48">Primary School</h3>
             <ul className="mt-5 space-y-3 text-sm text-white/72">
-              {[
-                { href: '/primary-school', label: 'Primary Overview' },
-                { href: '/primary-school/kindergarten', label: 'Kindergarten' },
-                { href: '/primary-school/elementary', label: 'Elementary/Primary' },
-                { href: '/primary-school/admissions', label: 'Primary Admissions' },
-              ].map((link) => (
+              {primaryNavigation.map((link) => (
                 <li key={link.href}><Link href={link.href} className="hover:text-white">{link.label}</Link></li>
               ))}
             </ul>
@@ -73,12 +71,7 @@ export default function AcademyFooter() {
           <div>
             <h3 className="font-mono text-[0.68rem] font-medium uppercase tracking-[0.24em] text-white/48">Secondary School</h3>
             <ul className="mt-5 space-y-3 text-sm text-white/72">
-              {[
-                { href: '/secondary-school', label: 'Secondary Overview' },
-                { href: '/secondary-school/junior-secondary', label: 'Junior Secondary' },
-                { href: '/secondary-school/senior-secondary', label: 'Senior Secondary' },
-                { href: '/secondary-school/admissions', label: 'Secondary Admissions' },
-              ].map((link) => (
+              {secondaryNavigation.map((link) => (
                 <li key={link.href}><Link href={link.href} className="hover:text-white">{link.label}</Link></li>
               ))}
             </ul>
@@ -87,14 +80,7 @@ export default function AcademyFooter() {
           <div>
             <h3 className="font-mono text-[0.68rem] font-medium uppercase tracking-[0.24em] text-white/48">General</h3>
             <ul className="mt-5 space-y-3 text-sm text-white/72">
-              {[
-                { href: '/about', label: 'About' },
-                { href: '/academics', label: 'Academics' },
-                { href: '/admissions', label: 'Admissions' },
-                { href: '/life-at-impetus', label: 'Life at Impetus' },
-                { href: '/gallery', label: 'Gallery' },
-                { href: '/contact', label: 'Contact' },
-              ].map((link) => (
+              {generalNavigation.map((link) => (
                 <li key={link.href}><Link href={link.href} className="hover:text-white">{link.label}</Link></li>
               ))}
             </ul>

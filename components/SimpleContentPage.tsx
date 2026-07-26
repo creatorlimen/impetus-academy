@@ -2,7 +2,7 @@
 import { ArrowRight } from 'lucide-react';
 import PageHero from '@/components/PageHero';
 import Section from '@/components/Section';
-import type { PageBrief } from '@/lib/api';
+import type { PageBrief } from '@/lib/content';
 
 interface SimpleContentPageProps {
   brief: PageBrief;

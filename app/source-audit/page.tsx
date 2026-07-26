@@ -1,6 +1,6 @@
 ﻿import PageHero from '@/components/PageHero';
 import Section from '@/components/Section';
-import { getSourceCoverage } from '@/lib/api';
+import { getSourceCoverage } from '@/lib/content';
 
 export const metadata = { title: 'Source Audit' };
 

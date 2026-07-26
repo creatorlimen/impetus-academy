@@ -3,7 +3,7 @@ import { ArrowRight, BookOpen, HeartHandshake, School, Sparkles } from 'lucide-r
 import FeatureCard from '@/components/FeatureCard';
 import PageHero from '@/components/PageHero';
 import Section from '@/components/Section';
-import { getBenefits, getLearningStages, getSchoolDivisions } from '@/lib/api';
+import { getBenefits, getLearningStages, getSchoolDivisions } from '@/lib/content';
 
 export const metadata = { title: 'Primary School' };
 

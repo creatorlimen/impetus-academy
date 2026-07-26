@@ -1,6 +1,6 @@
 ﻿import ContactSection from '@/components/ContactSection';
 import ExtendedContentPage from '@/components/ExtendedContentPage';
-import { getExtendedPage } from '@/lib/api';
+import { getExtendedPage } from '@/lib/content';
 
 export const metadata = { title: 'Contact' };
 

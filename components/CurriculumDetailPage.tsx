@@ -2,7 +2,7 @@
 import { ArrowRight } from 'lucide-react';
 import PageHero from '@/components/PageHero';
 import Section from '@/components/Section';
-import type { CurriculumPageContent } from '@/lib/api';
+import type { CurriculumPageContent } from '@/lib/content';
 
 export default function CurriculumDetailPage({ content }: { content: CurriculumPageContent }) {
   const admissionsHref = content.division === 'primary' ? '/primary-school/admissions' : '/secondary-school/admissions';

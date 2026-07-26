@@ -1,5 +1,5 @@
 ﻿import Section from '@/components/Section';
-import { getSiteSettings } from '@/lib/api';
+import { getSiteSettings } from '@/lib/content';
 import { Clock, Mail, MapPin, Phone } from 'lucide-react';
 
 interface ContactSectionProps {

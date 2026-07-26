@@ -1,5 +1,5 @@
 ﻿import LeadershipDetailPage from '@/components/LeadershipDetailPage';
-import { getLeadershipPage } from '@/lib/api';
+import { getLeadershipPage } from '@/lib/content';
 
 export const metadata = { title: 'Proprietor' };
 

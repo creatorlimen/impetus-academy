@@ -3,7 +3,7 @@ import { ArrowRight, Atom, BookOpen, BriefcaseBusiness, GraduationCap, Palette }
 import FeatureCard from '@/components/FeatureCard';
 import PageHero from '@/components/PageHero';
 import Section from '@/components/Section';
-import { getCurriculumPage, getLearningStages, getSchoolDivisions } from '@/lib/api';
+import { getCurriculumPage, getLearningStages, getSchoolDivisions } from '@/lib/content';
 
 export const metadata = { title: 'Secondary School' };
 

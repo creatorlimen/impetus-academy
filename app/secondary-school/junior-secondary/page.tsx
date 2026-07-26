@@ -1,5 +1,5 @@
 ﻿import CurriculumDetailPage from '@/components/CurriculumDetailPage';
-import { getCurriculumPage } from '@/lib/api';
+import { getCurriculumPage } from '@/lib/content';
 
 export const metadata = { title: 'Junior Secondary' };
 

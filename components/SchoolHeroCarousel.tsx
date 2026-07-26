@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { useCallback, useEffect, useState } from 'react';
 import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
-import type { DivisionContent } from '@/lib/api';
+import type { DivisionContent } from '@/lib/content';
 
 interface SchoolHeroCarouselProps {
   divisions: DivisionContent[];

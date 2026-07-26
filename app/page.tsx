@@ -6,7 +6,7 @@ import FeatureCard from '@/components/FeatureCard';
 import PersistentSchoolSelector from '@/components/PersistentSchoolSelector';
 import SchoolHeroCarousel from '@/components/SchoolHeroCarousel';
 import Section from '@/components/Section';
-import { getBenefits, getCurriculumFocus, getFaqs, getLearningStages, getSchoolDivisions, getTestimonials } from '@/lib/api';
+import { getBenefits, getCurriculumFocus, getFaqs, getLearningStages, getSchoolDivisions, getTestimonials } from '@/lib/content';
 
 const stageIcons = [Sparkles, School, BookOpen, GraduationCap];
 const benefitIcons = [Lightbulb, Users, Brain, Handshake, BookOpen, Palette];

@@ -1,6 +1,6 @@
 ﻿import PageHero from '@/components/PageHero';
 import Section from '@/components/Section';
-import type { PageSectionSet } from '@/lib/api';
+import type { PageSectionSet } from '@/lib/content';
 
 interface ExtendedContentPageProps {
   content: PageSectionSet;

@@ -1,6 +1,6 @@
 ﻿import PageHero from '@/components/PageHero';
 import Section from '@/components/Section';
-import { getSiteSettings } from '@/lib/api';
+import { getSiteSettings } from '@/lib/content';
 
 export const metadata = { title: 'Confirmation Needed' };
 

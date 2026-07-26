@@ -1,14 +1,14 @@
 ﻿import FeatureCard from '@/components/FeatureCard';
 import PageHero from '@/components/PageHero';
 import Section from '@/components/Section';
-import { getCurriculumFocus, getCurriculumPage, getLearningStages } from '@/lib/api';
+import { getCurriculumFocus, getCurriculumPage, getLearningStages } from '@/lib/content';
 
 export const metadata = { title: 'Academics' };
 
 export default function AcademicsPage() {
   const stages = getLearningStages();
   const focus = getCurriculumFocus();
-  const pathwayPages = ['science', 'arts', 'commercial'].map((slug) => getCurriculumPage(slug));
+  const pathwayPages = (['science', 'arts', 'commercial'] as const).map((slug) => getCurriculumPage(slug));
 
   return (
     <>

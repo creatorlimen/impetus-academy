@@ -1,7 +1,7 @@
 ﻿'use client';
 
 import { useState } from 'react';
-import type { FaqItem } from '@/lib/api';
+import type { FaqItem } from '@/lib/content';
 
 export default function FaqAccordion({ faqs }: { faqs: FaqItem[] }) {
   const [openIndex, setOpenIndex] = useState(0);

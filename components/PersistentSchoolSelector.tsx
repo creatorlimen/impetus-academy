@@ -1,6 +1,6 @@
 ﻿import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
-import type { DivisionContent } from '@/lib/api';
+import type { DivisionContent } from '@/lib/content';
 
 export default function PersistentSchoolSelector({ divisions }: { divisions: DivisionContent[] }) {
   return (

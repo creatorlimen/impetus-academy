@@ -1,7 +1,7 @@
 ﻿import ContactSection from '@/components/ContactSection';
 import PageHero from '@/components/PageHero';
 import Section from '@/components/Section';
-import { getAdmissionsSteps } from '@/lib/api';
+import { getAdmissionsSteps } from '@/lib/content';
 
 export const metadata = { title: 'Primary Admissions' };
 

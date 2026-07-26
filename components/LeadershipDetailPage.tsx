@@ -1,6 +1,6 @@
 ﻿import PageHero from '@/components/PageHero';
 import Section from '@/components/Section';
-import type { LeadershipPageContent } from '@/lib/api';
+import type { LeadershipPageContent } from '@/lib/content';
 
 export default function LeadershipDetailPage({ content }: { content: LeadershipPageContent }) {
   return (

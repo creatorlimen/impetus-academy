@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import { ChevronDown, Menu, Phone, X } from 'lucide-react';
-import { getNavigation, getSiteSettings, type NavigationItem } from '@/lib/api';
+import { getNavigation, getSiteSettings, type NavigationItem } from '@/lib/content';
 
 function DesktopDropdown({ item, scrolled }: { item: NavigationItem; scrolled: boolean }) {
   const [open, setOpen] = useState(false);
