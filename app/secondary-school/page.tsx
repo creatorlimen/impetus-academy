@@ -19,12 +19,12 @@ export default function SecondarySchoolPage() {
   return (
     <>
       <PageHero eyebrow={division.eyebrow} title={division.headline} subtitle={division.summary} ctaLabel="Begin Secondary Application" ctaHref="/secondary-school/admissions" />
-      <Section title="Secondary School pathways." subtitle="Junior Secondary and Senior Secondary are visible immediately, with Science, Arts, and Commercial pathways treated as real choices." align="left">
+      <Section title="Learning through Junior and Senior Secondary." subtitle="Students broaden their knowledge in Junior Secondary and move into more focused Science, Arts, or Commercial study in Senior Secondary." align="left">
         <div className="grid gap-5 md:grid-cols-2">
-          {stages.map((stage, index) => <FeatureCard key={stage.slug} title={stage.title} description={stage.summary} href={stage.href} ctaLabel="View pathway" icon={index === 0 ? BookOpen : GraduationCap} />)}
+          {stages.map((stage, index) => <FeatureCard key={stage.slug} title={stage.title} description={stage.summary} href={stage.href} ctaLabel="Explore this stage" icon={index === 0 ? BookOpen : GraduationCap} />)}
         </div>
       </Section>
-      <Section title="Senior Secondary options." className="bg-surface/65" align="left">
+      <Section title="Choose a Senior Secondary area of study." className="bg-surface/65" align="left">
         <div className="grid gap-5 md:grid-cols-3">
           {pathways.map(({ content, href, icon }) => <FeatureCard key={content.slug} title={content.title} description={content.summary} href={href} ctaLabel="View curriculum" icon={icon} />)}
         </div>

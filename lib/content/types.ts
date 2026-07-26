@@ -61,14 +61,6 @@ export interface Testimonial {
   division: 'general' | SchoolDivision;
 }
 
-export interface PageBrief {
-  title: string;
-  eyebrow: string;
-  summary: string;
-  body: string[];
-  confirmationNeeded?: string[];
-}
-
 export interface ContentSection {
   title: string;
   body?: string;
@@ -94,6 +86,7 @@ export interface CurriculumPageContent {
   cardTitle?: string;
   cardDescription?: string;
   sections: ContentSection[];
+  aside?: PageAside;
   confirmationNeeded?: string[];
 }
 
@@ -123,11 +116,20 @@ export interface SourceCoverageItem {
   notes: string;
 }
 
+export interface PageAside {
+  eyebrow?: string;
+  title: string;
+  body: string;
+  ctaLabel?: string;
+  ctaHref?: string;
+}
+
 export interface PageSectionSet {
   heroTitle: string;
   eyebrow: string;
   summary: string;
   sections: ContentSection[];
+  aside?: PageAside;
   confirmationNeeded?: string[];
 }
 

@@ -1,6 +1,7 @@
 import type {
   CurriculumFocus,
   CurriculumPageContent,
+  PageAside,
   CurriculumSlug,
   LearningStage,
 } from './types';
@@ -34,7 +35,7 @@ export const learningStages: LearningStage[] = [
     slug: 'senior-secondary',
     division: 'secondary',
     href: '/secondary-school/senior-secondary',
-    summary: 'Senior learning organised around Science, Arts, and Commercial pathways for future study and work readiness.',
+    summary: 'Senior Secondary students choose Science, Arts, or Commercial subjects as they prepare for further study and the world of work.',
   },
 ];
 
@@ -63,7 +64,7 @@ export const curriculumPages: Record<CurriculumSlug, CurriculumPageContent> = {
     slug: 'kindergarten',
     title: 'Kindergarten Curriculum',
     eyebrow: 'Primary School',
-    summary: 'A holistic early-years framework built around play-based learning, social-emotional development, and foundational academic skills.',
+    summary: 'Early learning built around play-based learning, social-emotional development, and foundational academic skills.',
     division: 'primary',
     href: '/primary-school/kindergarten',
     sourceUrl: 'https://impetusacademy.ng/kindergarten-curriculum/',
@@ -100,7 +101,7 @@ export const curriculumPages: Record<CurriculumSlug, CurriculumPageContent> = {
     slug: 'elementary',
     title: 'Elementary/Primary Curriculum',
     eyebrow: 'Primary School',
-    summary: 'A well-rounded primary framework across language, mathematics, science, social studies, arts, physical education, technology, and optional foreign language.',
+    summary: 'Primary learning across language, mathematics, science, social studies, arts, physical education, technology, and optional foreign language.',
     division: 'primary',
     href: '/primary-school/elementary',
     sourceUrl: 'https://impetusacademy.ng/elementary-curriculum/',
@@ -129,7 +130,7 @@ export const curriculumPages: Record<CurriculumSlug, CurriculumPageContent> = {
     slug: 'junior-secondary',
     title: 'Junior Secondary Curriculum',
     eyebrow: 'Secondary School',
-    summary: 'A balanced junior secondary framework across language, mathematics, science, social studies, arts, technology, vocational skills, and personal development.',
+    summary: 'Junior Secondary learning across language, mathematics, science, social studies, arts, technology, vocational skills, and personal development.',
     division: 'secondary',
     href: '/secondary-school/junior-secondary',
     sourceUrl: 'https://impetusacademy.ng/jss-curriculum/',
@@ -156,12 +157,12 @@ export const curriculumPages: Record<CurriculumSlug, CurriculumPageContent> = {
     slug: 'science',
     title: 'Senior Secondary Science Pathway',
     eyebrow: 'Senior Secondary',
-    summary: 'A science stream framework covering mathematics, physics, chemistry, biology, applied science, computer science, and research skills.',
+    summary: 'The Science pathway covers mathematics, physics, chemistry, biology, applied science, computer science, and research skills.',
     division: 'secondary',
     href: '/secondary-school/senior-secondary/science',
     sourceUrl: 'https://impetusacademy.ng/sss-curriculum-science/',
     cardTitle: 'Science Pathway',
-    cardDescription: 'A senior pathway for learners focusing on science and related subjects.',
+    cardDescription: 'For students drawn to science, mathematics, technology, investigation, and discovery.',
     sections: [
       {
         title: 'Core science subjects',
@@ -185,12 +186,12 @@ export const curriculumPages: Record<CurriculumSlug, CurriculumPageContent> = {
     slug: 'arts',
     title: 'Senior Secondary Arts Pathway',
     eyebrow: 'Senior Secondary',
-    summary: 'An arts stream framework across visual arts, performing arts, artistic specialisations, art history, cultural studies, technology, portfolio development, and communication.',
+    summary: 'The Arts pathway brings together visual arts, performing arts, artistic specialisations, art history, cultural studies, technology, portfolio development, and communication.',
     division: 'secondary',
     href: '/secondary-school/senior-secondary/arts',
     sourceUrl: 'https://impetusacademy.ng/sss-curriculum-art/',
     cardTitle: 'Arts Pathway',
-    cardDescription: 'A senior pathway for learners focusing on arts, languages, humanities, and creative subjects.',
+    cardDescription: 'For students drawn to languages, humanities, culture, communication, and creative work.',
     sections: [
       {
         title: 'Core art disciplines',
@@ -214,12 +215,12 @@ export const curriculumPages: Record<CurriculumSlug, CurriculumPageContent> = {
     slug: 'commercial',
     title: 'Senior Secondary Commercial Pathway',
     eyebrow: 'Senior Secondary',
-    summary: 'A commercial stream framework focused on business, financial literacy, communication, office management, entrepreneurship, retail, commercial law, and business mathematics.',
+    summary: 'The Commercial pathway develops business, financial literacy, communication, office management, entrepreneurship, retail, commercial law, and business mathematics.',
     division: 'secondary',
     href: '/secondary-school/senior-secondary/commercial',
     sourceUrl: 'https://impetusacademy.ng/sss-curriculum-commercial/',
     cardTitle: 'Commercial Pathway',
-    cardDescription: 'A senior pathway for learners focusing on business, commerce, accounting, and financial literacy.',
+    cardDescription: 'For students drawn to business, commerce, accounting, entrepreneurship, and financial literacy.',
     sections: [
       {
         title: 'Core business subjects',
@@ -249,8 +250,41 @@ export function getCurriculumFocus() {
   return curriculumFocus;
 }
 
+const curriculumAsides: Record<CurriculumSlug, PageAside> = {
+  kindergarten: {
+    eyebrow: 'Early foundations',
+    title: 'Learning through play and discovery',
+    body: 'Children build language, number awareness, movement, creativity, and social confidence through guided activities and age-appropriate exploration.',
+  },
+  elementary: {
+    eyebrow: 'Primary learning',
+    title: 'Skills children can build on',
+    body: 'Reading, writing, mathematics, science, creativity, health, and digital awareness work together to prepare children for increasingly independent learning.',
+  },
+  'junior-secondary': {
+    eyebrow: 'Growing independence',
+    title: 'A broader world of subjects',
+    body: 'Students deepen their core knowledge while developing practical skills, stronger study habits, personal responsibility, and confidence across a wider curriculum.',
+  },
+  science: {
+    eyebrow: 'Science pathway',
+    title: 'Question, investigate, and understand',
+    body: 'Mathematics, laboratory thinking, scientific inquiry, research, and computing help students examine evidence and solve increasingly complex problems.',
+  },
+  arts: {
+    eyebrow: 'Arts pathway',
+    title: 'Ideas expressed with skill and imagination',
+    body: 'Students explore visual and performing arts, culture, communication, digital creativity, portfolio development, and the practical side of creative work.',
+  },
+  commercial: {
+    eyebrow: 'Commercial pathway',
+    title: 'Understanding enterprise and everyday finance',
+    body: 'Business, accounting, economics, communication, entrepreneurship, and digital tools help students understand how organisations and markets work.',
+  },
+};
+
 export function getCurriculumPage(slug: CurriculumSlug) {
-  return curriculumPages[slug];
+  return { ...curriculumPages[slug], aside: curriculumAsides[slug] };
 }
 
 const seniorSecondaryPathwaySlugs = ['science', 'arts', 'commercial'] as const;

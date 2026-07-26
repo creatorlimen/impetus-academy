@@ -25,9 +25,9 @@ export default function Home() {
       <PersistentSchoolSelector divisions={divisions} />
 
       <Section
-        eyebrow="Academy Introduction"
-        title="Learning with purpose at every stage."
-        subtitle="Impetus Integrated Learning Academy provides a supportive learning environment built on integrity, academic excellence, character, practical skills, and thoughtful use of technology."
+        eyebrow="Welcome to Impetus"
+        title="A place to learn, question, create, and grow."
+        subtitle="At Impetus Academy, Primary and Secondary students learn in a supportive community where strong teaching, character, creativity, and practical skills belong together."
         align="left"
       >
         <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(320px,0.72fr)]">
@@ -37,7 +37,7 @@ export default function Home() {
                 At Impetus, technology supports good teaching rather than replacing it. Lessons are designed to help children see ideas clearly, practise with confidence, and connect classroom learning with everyday life.
               </p>
               <p>
-                Across Primary and Secondary School, learners are guided to read well, reason carefully, communicate clearly, create boldly, and grow in character.
+                From the early years through Senior Secondary, students are encouraged to read widely, reason carefully, communicate confidently, create with imagination, and take responsibility for their growth.
               </p>
             </div>
             <Link href="/about/our-story" className="button-link mt-8">
@@ -48,9 +48,9 @@ export default function Home() {
 
           <div className="dark-panel rounded-[2.5rem] p-6 text-white sm:p-8">
             <p className="font-label text-[0.68rem] uppercase tracking-[0.14em] text-white/48">Vision and Mission</p>
-            <h3 className="mt-5 text-3xl font-semibold tracking-[-0.015em]">Technology with balance, character with purpose.</h3>
+            <h3 className="mt-5 text-3xl font-semibold tracking-[-0.015em]">Technology in service of learning.</h3>
             <p className="mt-5 text-sm leading-relaxed text-white/72 sm:text-base">
-              Vision: To promote a balanced use of technology to motivate scholars to develop deeper conceptual understanding, ask meaningful questions, and cultivate transferable skills.
+              Our vision is to use technology in a balanced way, helping students understand ideas deeply, ask meaningful questions, and develop skills they can carry into new situations.
             </p>
             <p className="mt-4 text-sm leading-relaxed text-white/72 sm:text-base">
               Mission: To help learners build the skills, values, and confidence they need for school, life, and the future.
@@ -60,9 +60,9 @@ export default function Home() {
       </Section>
 
       <Section
-        eyebrow="Learning Journey"
-        title="Four linked stages, one academy standard."
-        subtitle="Each stage has its own rhythm, curriculum focus, and next step, while staying connected to one academy standard."
+        eyebrow="From Primary to Secondary"
+        title="Learning that grows with every stage."
+        subtitle="Children begin with strong foundations, meet a broader range of subjects as they grow, and move towards deeper Senior Secondary study."
         className="bg-surface/65"
         align="left"
       >
@@ -84,8 +84,8 @@ export default function Home() {
       </Section>
 
       <Section
-        title="Primary and Secondary hold equal weight."
-        subtitle="Each school journey has its own entry point, admissions path, and curriculum links, while staying part of one academy identity."
+        title="Find the right school for your child."
+        subtitle="Explore the learning stages, curriculum, and admissions information for Primary or Secondary School."
         align="left"
       >
         <div className="grid gap-6 lg:grid-cols-2">
@@ -112,7 +112,7 @@ export default function Home() {
 
       <Section
         eyebrow="Why Families Choose Impetus"
-        title="A school culture built around attention, practice, and future readiness."
+        title="What learning looks like at Impetus."
         className="bg-surface/70"
         align="left"
       >
@@ -126,19 +126,19 @@ export default function Home() {
 
       <Section
         eyebrow="Academics"
-        title="Curriculum focus that cuts across the academy."
-        subtitle="Core skills are introduced early, strengthened steadily, and revisited with greater depth as learners move through the academy."
+        title="Strong foundations, deeper study."
+        subtitle="Reading, writing, mathematics, science, creativity, and critical thinking develop with greater depth as students progress through school."
         align="left"
       >
         <div className="grid gap-6 lg:grid-cols-[0.8fr_1.2fr]">
           <div className="surface-panel rounded-[2.5rem] p-6 sm:p-8">
-            <h3 className="text-3xl font-semibold tracking-[-0.015em] text-card-foreground">Balanced curriculum access.</h3>
+            <h3 className="text-3xl font-semibold tracking-[-0.015em] text-card-foreground">Skills that grow over time.</h3>
             <p className="mt-4 text-base leading-relaxed text-muted">
-              Primary pages focus on Kindergarten and Elementary/Primary. Secondary pages expose Junior Secondary, Senior Secondary, and the Science, Arts, and Commercial pathways.
+              Primary students build essential knowledge and learning habits. Secondary students deepen that foundation through Junior Secondary subjects and Science, Arts, or Commercial study at Senior Secondary level.
             </p>
             <div className="mt-7 grid gap-3">
               <Link href="/academics" className="button-link">View academics overview <ArrowRight className="h-4 w-4" /></Link>
-              <Link href="/secondary-school/senior-secondary" className="button-link">Explore senior pathways <ArrowRight className="h-4 w-4" /></Link>
+              <Link href="/secondary-school/senior-secondary" className="button-link">Explore Senior Secondary <ArrowRight className="h-4 w-4" /></Link>
             </div>
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
@@ -153,24 +153,24 @@ export default function Home() {
       </Section>
 
       <Section
-        title="From the founder's message."
-        subtitle="A short reflection on the school journey, its beginning, and its commitment to purposeful learning."
+        title="A message from our founder."
+        subtitle="A reflection on the school’s beginning, its growth, and the community that continues to shape Impetus."
         className="bg-surface/65"
         align="left"
       >
         <div className="grid gap-6 lg:grid-cols-[0.78fr_1.22fr]">
           <div className="dark-panel flex min-h-[320px] items-end rounded-[2.5rem] p-6 text-white sm:p-8">
             <div>
-              <p className="font-label text-[0.68rem] uppercase tracking-[0.14em] text-white/48">Confirmation needed</p>
-              <h3 className="mt-4 text-3xl font-semibold tracking-[-0.015em]">Founder portrait and public title.</h3>
+              <p className="font-label text-[0.68rem] uppercase tracking-[0.14em] text-white/48">Founder</p>
+              <h3 className="mt-4 text-3xl font-semibold tracking-[-0.015em]">Mashood Tajudeen Olaide Adetela</h3>
             </div>
           </div>
           <div className="surface-panel rounded-[2.5rem] p-6 sm:p-8 lg:p-10">
             <p className="text-lg leading-[1.9] text-muted">
-              As I reflect on our journey at Impetus Integrated Learning Academy, I am filled with deep gratitude and excitement for the future of education. What began in 2018 with just three students and a dedicated team of educators has blossomed into a thriving community of learners, united by our commitment to excellence and innovation.
+              I am deeply grateful for how Impetus has grown. We began in 2018 with three students and a dedicated team of educators. Today, we are a thriving community of learners, still guided by our commitment to excellent teaching, good character, and fresh ideas.
             </p>
             <Link href="/about/founder" className="button-link mt-8">
-              Read the founder page
+              Meet our founder
               <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
@@ -194,10 +194,10 @@ export default function Home() {
             <div className="max-w-3xl">
               <p className="font-label text-[0.68rem] uppercase tracking-[0.14em] text-white/48">Admissions</p>
               <h2 className="mt-5 text-3xl font-semibold tracking-[-0.015em] sm:text-4xl lg:text-[3rem]">
-                Start with an enquiry, then confirm the right next step.
+                Talk with us about your child.
               </h2>
               <p className="mt-5 max-w-2xl text-base leading-relaxed text-white/72 md:text-lg">
-                The admissions flow is presented as an enquiry pathway. It does not imply automatic admission, payment, or final placement.
+                Tell the admissions team whether you are considering Primary or Secondary School. We will share the current application form, assessment dates, requirements, and next steps.
               </p>
             </div>
             <div className="flex flex-wrap gap-3">
@@ -208,7 +208,7 @@ export default function Home() {
         </div>
       </section>
 
-      <Section eyebrow="FAQ" title="Common questions, held in one place." subtitle="Clear answers to the questions families most often ask while considering Impetus Academy." className="bg-surface/70" align="left">
+      <Section eyebrow="FAQ" title="Questions families often ask." subtitle="Find out more about learning, school life, family involvement, and applying to Impetus Academy." className="bg-surface/70" align="left">
         <FaqAccordion faqs={faqs} />
       </Section>
 

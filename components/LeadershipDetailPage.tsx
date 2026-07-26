@@ -1,4 +1,4 @@
-﻿import PageHero from '@/components/PageHero';
+import PageHero from '@/components/PageHero';
 import Section from '@/components/Section';
 import type { LeadershipPageContent } from '@/lib/content';
 
@@ -12,7 +12,9 @@ export default function LeadershipDetailPage({ content }: { content: LeadershipP
             <div>
               <p className="font-label text-[0.68rem] uppercase tracking-[0.14em] text-white/48">{content.role}</p>
               <h2 className="mt-4 text-3xl font-semibold tracking-[-0.015em]">{content.name}</h2>
-              <p className="mt-4 text-sm leading-relaxed text-white/68">Portrait pending approved asset.</p>
+              <p className="mt-4 text-sm leading-relaxed text-white/72">
+                Serving the Impetus community through educational leadership, care, and a commitment to every learner’s growth.
+              </p>
             </div>
           </aside>
 
@@ -28,13 +30,9 @@ export default function LeadershipDetailPage({ content }: { content: LeadershipP
                 )}
               </article>
             ))}
-            <article className="dark-panel rounded-[2rem] p-6 text-white sm:p-7">`r`n              <p className="font-label text-[0.66rem] uppercase tracking-[0.14em] text-white/48">Profile note</p>`r`n              <p className="mt-4 text-sm leading-relaxed text-white/72">A few leadership profile details are still being checked with the school team before final publication.</p>`r`n            </article>
           </div>
         </div>
       </Section>
     </>
   );
 }
-
-
-

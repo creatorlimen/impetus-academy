@@ -17,10 +17,10 @@ export default function AcademyFooter() {
           <div className="max-w-2xl">
             <p className="font-label text-[0.68rem] uppercase tracking-[0.14em] text-white/48">{settings.tagline}</p>
             <h2 className="mt-6 text-3xl font-semibold tracking-[-0.015em] sm:text-4xl lg:text-[3.25rem]">
-              One academy, two carefully held learning journeys.
+              A school community where children can learn, grow, and belong.
             </h2>
             <p className="mt-5 max-w-xl text-base leading-relaxed text-primary-100/72 md:text-lg">
-              {settings.name} provides an outstanding learning environment rooted in integrity, academic excellence, character, practical skills, and thoughtful use of technology.
+              {settings.name} brings together strong teaching, good character, practical skills, and technology that helps students understand and create.
             </p>
           </div>
 
@@ -55,7 +55,7 @@ export default function AcademyFooter() {
               </div>
             </div>
             <p className="mt-5 max-w-md text-sm leading-relaxed text-primary-100/66">
-              A growing school community for Primary and Secondary learners, built around character, confidence, practical skills, and thoughtful use of technology.
+              A welcoming school community for Primary and Secondary students, with room to build character, confidence, knowledge, and practical skills.
             </p>
           </div>
 
@@ -88,10 +88,7 @@ export default function AcademyFooter() {
         </div>
 
         <div className="mt-12 flex flex-col gap-4 border-t border-white/10 pt-8 text-sm text-white/42 md:flex-row md:items-center md:justify-between">
-          <p className="font-label text-[0.62rem] uppercase tracking-[0.14em] text-white/44">
-            <span className="mr-2 inline-flex h-2 w-2 rounded-full bg-emerald-400 align-middle shadow-[0_0_0_0.3rem_rgba(74,222,128,0.12)] animate-pulse" />
-            Staging build in progress
-          </p>
+          <p className="text-sm text-white/52">Primary and Secondary education in Ijaye, Lagos.</p>
           <p>© {year} {settings.shortName}. All rights reserved.</p>
         </div>
       </div>

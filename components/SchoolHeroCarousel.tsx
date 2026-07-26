@@ -58,11 +58,11 @@ export default function SchoolHeroCarousel({ divisions, interval = 3000 }: Schoo
             <h1 className="mt-6 text-[2.8rem] font-semibold leading-[1.02] tracking-[-0.025em] sm:text-[4rem] lg:text-[5.4rem]">
               One Academy.
               <span className="font-display mt-1 block text-[0.94em] font-semibold text-accent-300">
-                Two learning journeys.
+                Two schools. One community.
               </span>
             </h1>
             <p className="mt-6 max-w-2xl text-base leading-relaxed text-primary-100/84 sm:text-lg md:text-xl">
-              From strong foundations in the Primary School to purposeful preparation in the Secondary School, Impetus combines academic excellence, character development, practical skills, and technology-enabled learning.
+              From Primary School foundations to Secondary School choices, Impetus helps students build knowledge, character, confidence, practical skills, and a healthy relationship with technology.
             </p>
           </div>
 

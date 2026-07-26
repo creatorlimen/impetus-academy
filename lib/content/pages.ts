@@ -1,158 +1,125 @@
-import type {
-  PageBrief,
-  PageSectionSet,
-} from './types';
-
-export const pageBriefs: Record<string, PageBrief> = {
-  about: {
-    title: 'Learning with purpose at every stage.',
-    eyebrow: 'Academy Overview',
-    summary: 'Impetus Integrated Learning Academy provides a supportive environment rooted in integrity, academic excellence, character, practical skills, and technology-enabled learning.',
-    body: [
-      'The academy combines strong classroom teaching with thoughtful use of technology, creating a learning environment that feels both grounded and forward-looking.',
-      'Learners are guided to understand deeply, communicate confidently, think critically, and apply what they learn.',
-    ],
-  },
-  story: {
-    title: 'From a small beginning to one academy with two journeys.',
-    eyebrow: 'Our Story',
-    summary: 'The school began as an offshoot of Impetus Tutorial College and has grown into an academy serving both Primary and Secondary learners.',
-    body: [
-      'The school commenced operation on 10 September 2018 with three students, seven full-time academic staff, three part-time teaching staff, and two support staff.',
-      'The second and third terms improved to eight students and thirteen staff, and the population reached one hundred students in three academic years.',
-      'The primary arm was established in September 2023 to cater for well-rounded primary education.',
-    ],
-    confirmationNeeded: ['Confirm exact official name at inception and preferred handling of Impetus College as historical naming.'],
-  },
-  founder: {
-    title: 'From the desk of our founder.',
-    eyebrow: 'Founder',
-    summary: 'The founder message frames Impetus as a community built around excellence, innovation, technology integration, vocational training, and holistic education.',
-    body: [
-      'The founder message reflects on a journey that began in 2018 with three students and a dedicated team of educators.',
-      'The message points to a vision of bridging strong traditional education with the digital landscape, helping students discover their strengths through technology integration and vocational training.',
-    ],
-    confirmationNeeded: ['Confirm founder name, title, credentials, preferred spelling, and portrait.'],
-  },
-  proprietor: {
-    title: 'Proprietor profile.',
-    eyebrow: 'Leadership',
-    summary: 'The proprietor page introduces the school\'s leadership while keeping final name, title, credentials, and portrait details marked for confirmation.',
-    body: ['The profile should be completed in the next detailed content pass once the preferred public biography is confirmed.'],
-    confirmationNeeded: ['Confirm proprietor name, title, credentials, portrait, and any claims that need trimming.'],
-  },
-};
-
+import type { PageSectionSet } from './types';
 
 export const extendedPages: Record<string, PageSectionSet> = {
   about: {
-    eyebrow: 'Academy Overview',
-    heroTitle: 'A warm, technology-enabled academy with two equal journeys.',
-    summary: 'Impetus Integrated Learning Academy combines academic excellence, integrity, character, practical skills, and technology-enabled learning across Primary and Secondary education.',
+    eyebrow: 'About Impetus',
+    heroTitle: 'Education that helps every child grow with confidence.',
+    summary: 'Impetus Academy serves Primary and Secondary students in a school community built on strong teaching, character, creativity, practical skills, and responsible use of technology.',
     sections: [
       {
-        title: 'What the academy does',
-        body: 'Impetus presents a learning environment rooted in integrity, academic excellence, and strong moral values. Technology supports teaching and learning, while the wider school culture encourages students to stand with confidence wherever they find themselves.',
+        title: 'Who we are',
+        body: 'Impetus Integrated Learning Academy is a Primary and Secondary school in Ijaye, Lagos. We want every student to feel known, supported, and challenged to do their best work.',
       },
       {
-        title: 'Educational approach',
-        body: 'The academy blends strong classroom teaching with thoughtful technology use, especially across mathematics, science, art, and practical learning.',
+        title: 'How students learn',
+        body: 'Lessons combine clear teaching, guided practice, visual and digital resources, practical examples, assignments, revision, assessment, and feedback. Students are encouraged to participate, ask questions, and apply what they learn.',
       },
       {
-        title: 'Vision and mission',
+        title: 'Our vision and mission',
         items: [
-          'Vision: To promote a balanced use of technology that motivates scholars to develop deeper conceptual understanding, ask meaningful questions, and cultivate transferable skills.',
-          'Mission: To help learners build essential skills that translate meaningfully into school, life, and the future.',
+          'Vision: To promote a balanced use of technology that motivates scholars to understand ideas deeply, ask meaningful questions, and develop skills they can adapt throughout life.',
+          'Mission: To help learners build knowledge, character, confidence, and practical abilities that serve them in school and beyond.',
         ],
       },
     ],
+    aside: {
+      eyebrow: 'One school community',
+      title: 'Growing from Primary to Secondary',
+      body: 'Children can build their early foundations at Impetus and continue into deeper Junior and Senior Secondary study within the same supportive school community.',
+      ctaLabel: 'Explore our schools',
+      ctaHref: '/academics',
+    },
   },
   story: {
     eyebrow: 'Our Story',
-    heroTitle: 'From three students to a growing academy community.',
-    summary: 'The school story is presented with care, while a few naming details remain marked for confirmation.',
+    heroTitle: 'A small beginning. A growing school community.',
+    summary: 'Impetus began in 2018 with three students and a committed team of educators. Since then, the school has continued to grow in size, purpose, and the range of learning it offers.',
     sections: [
       {
-        title: 'Beginning',
-        body: 'The school began as an offshoot of Impetus Tutorial College, Charity Road, New Oko-Oba Area of Lagos, and commenced operation on 10 September 2018.',
+        title: 'Where we began',
+        body: 'The school grew from Impetus Tutorial College on Charity Road in the New Oko-Oba area of Lagos and began operation on 10 September 2018.',
       },
       {
-        title: 'Early growth',
-        body: 'At inception, the school had three students, seven full-time academic staff, three part-time teaching staff, and two support staff. The second and third terms grew to eight students and thirteen staff, and the population reached one hundred students in three academic years.',
+        title: 'Our early growth',
+        body: 'At the beginning, Impetus had three students, seven full-time academic staff, three part-time teachers, and two support staff. Enrolment grew to eight students during the first session, and the school reached one hundred students within three academic years.',
       },
       {
-        title: 'Primary arm',
-        body: 'The primary arm was established in September 2023 to provide well-rounded primary education shaped by academic excellence and character development.',
+        title: 'The Primary School',
+        body: 'In September 2023, Impetus established its Primary arm to give younger children strong academic foundations alongside character development, creativity, and practical learning.',
       },
       {
-        title: 'Teaching approach',
+        title: 'How we continue to grow',
         items: [
-          'Activity-based lessons with diagrams, audio-visual materials, and practical examples.',
-          'Assessment and evaluation exercises at the end of classes.',
-          'Assignment checks, revision, periodic tests, and feedback to parents.',
-          'Integration of technology into mathematics, science, art, and the wider curriculum.',
+          'Activity-based lessons supported by diagrams, multimedia resources, and practical examples.',
+          'Assignments, revision, assessment, and feedback that help students make steady progress.',
+          'Academic learning connected with technology and practical skills.',
+          'Open communication among students, families, teachers, and school leaders.',
         ],
       },
     ],
-    confirmationNeeded: ['Confirm exact official name at inception.', 'Confirm how to present Impetus College as a historical name.', 'Review final wording around moral values before publication.'],
+    aside: {
+      eyebrow: 'Since 2018',
+      title: 'Built one learner at a time',
+      body: 'The school’s growth reflects the trust of families and the work of educators committed to helping children learn with confidence and purpose.',
+      ctaLabel: 'Meet our founder',
+      ctaHref: '/about/founder',
+    },
   },
   life: {
     eyebrow: 'Life at Impetus',
-    heroTitle: 'Learning beyond the classroom, pending approved imagery.',
-    summary: 'Life at Impetus is shaped by practical learning, technology-supported teaching, extracurricular opportunities, and a connected school community.',
+    heroTitle: 'Learning, creativity, and community beyond the classroom.',
+    summary: 'School life at Impetus gives students opportunities to practise new skills, explore their interests, work with others, and take an active part in their community.',
     sections: [
       {
-        title: 'Activity-based learning',
-        body: 'Impetus uses an activity-based lesson system with diagrams, audio-visual resources, and practical examples so teachers and learners can participate actively in the learning process.',
+        title: 'Learning through activity',
+        body: 'Lessons use diagrams, multimedia resources, guided exercises, and practical examples so students can participate actively and connect ideas with experience.',
       },
       {
-        title: 'Extracurricular development',
-        body: 'Extracurricular activities include sports, arts, music, and clubs, giving students opportunities to explore interests and develop well-rounded personalities.',
+        title: 'Interests and talents',
+        body: 'Sports, arts, music, clubs, and other activities give students space to discover new interests, practise teamwork, and develop confidence outside regular lessons.',
       },
       {
-        title: 'Community rhythm',
-        body: 'The school fosters regular parent-teacher interactions, workshops, and school events to support open communication and active involvement among students, parents, and staff.',
-      },
-      {
-        title: 'Asset policy',
-        items: [
-          'Use approved school images only.',
-          'Do not use Iru-VI civic imagery as Impetus production imagery.',
-          'Do not label a photograph Primary or Secondary unless image metadata or the school team confirms it.',
-        ],
+        title: 'Families and school life',
+        body: 'Parent-teacher conversations, workshops, and school events help families stay connected with their child’s progress and the wider life of the academy.',
       },
     ],
-    confirmationNeeded: ['Approved Life at Impetus images with consent are required.', 'Image categories and division classification require confirmation.'],
+    aside: {
+      eyebrow: 'Everyday school life',
+      title: 'Room to learn and belong',
+      body: 'From classroom discussion to creative work and shared events, students are encouraged to contribute, form friendships, and grow as members of the school community.',
+      ctaLabel: 'Contact the school',
+      ctaHref: '/contact',
+    },
   },
   gallery: {
     eyebrow: 'Gallery',
-    heroTitle: 'A school photo archive prepared for approved assets.',
-    summary: 'The gallery is prepared for approved school images with clear captions, consent, and category details.',
+    heroTitle: 'Moments from life at Impetus.',
+    summary: 'Classroom discovery, creative work, sports, celebrations, and time together all form part of the Impetus experience.',
     sections: [
       {
-        title: 'Current gallery disposition',
-        body: 'The gallery page is reserved for real school photo records. Repeated curriculum, FAQ, and testimonial content now lives elsewhere so this page can focus on approved images.',
+        title: 'Learning in action',
+        body: 'We look forward to sharing more approved photographs of students learning, creating, collaborating, and taking part in school activities.',
       },
       {
-        title: 'Metadata required',
-        items: [
-          'Image title or caption.',
-          'Alt text describing visible content.',
-          'Division classification: Primary, Secondary, or General, only where confirmed.',
-          'Category such as classroom learning, technology, arts, sports, vocational activity, or events.',
-          'Consent confirmation for website use.',
-        ],
+        title: 'Visit the academy',
+        body: 'Families who would like to experience the school environment can contact the admissions team to ask about a visit.',
       },
     ],
-    confirmationNeeded: ['Approved school gallery images are required before this page becomes production-complete.'],
+    aside: {
+      eyebrow: 'Come and meet us',
+      title: 'See the school for yourself',
+      body: 'A school visit gives your family an opportunity to ask questions, meet the team, and learn more about Primary or Secondary admission.',
+      ctaLabel: 'Plan an enquiry',
+      ctaHref: '/contact',
+    },
   },
   contact: {
     eyebrow: 'Contact',
-    heroTitle: 'Reach Impetus Academy with the right enquiry.',
-    summary: 'Use the school contact details for admissions enquiries, visits, and general communication.',
+    heroTitle: 'We would be glad to hear from you.',
+    summary: 'Contact Impetus Academy with questions about admissions, school visits, Primary or Secondary education, or everyday school matters.',
     sections: [
       {
-        title: 'Published contact details',
+        title: 'Visit or call',
         items: [
           'Address: 73 Bola Ahmed Tinubu Street, formerly Agbado Ijaye Road, Ijaye, Lagos.',
           'Phone: 07057553716.',
@@ -162,18 +129,17 @@ export const extendedPages: Record<string, PageSectionSet> = {
         ],
       },
       {
-        title: 'Enquiry form fields',
-        items: ['Parent name', 'Parent phone', 'Parent email address', 'Child name', 'Child birthdate', 'Interested in'],
+        title: 'Admissions enquiries',
+        body: 'Tell us the school division and class you are considering. The admissions team can share the current application form, assessment dates, requirements, and next steps.',
       },
     ],
-    confirmationNeeded: ['Confirm final contact details and opening hours.', 'Confirm drop-off and pickup times before publishing globally.', 'Privacy policy and backend submission handling are needed before real form submission.'],
+    aside: {
+      eyebrow: 'Planning a visit?',
+      title: 'Start with a conversation',
+      body: 'Call or send an enquiry before visiting so the school team can help you choose a suitable time and connect you with the right person.',
+    },
   },
 };
-
-
-export function getPageBrief(slug: keyof typeof pageBriefs) {
-  return pageBriefs[slug];
-}
 
 export function getExtendedPage(slug: keyof typeof extendedPages) {
   return extendedPages[slug];
