@@ -48,7 +48,7 @@ export default function ContactSection({
           </div>
         </div>
 
-        <div className="dark-panel rounded-[2.3rem] p-6 text-primary-950 sm:p-8">
+        <div className="warm-panel rounded-[2.3rem] p-6 text-primary-950 sm:p-8">
           <p className="font-label text-[0.66rem] uppercase tracking-[0.14em] text-accent-700">Admissions and school visits</p>
           <h3 className="mt-4 text-3xl font-semibold tracking-[-0.015em]">Start with a conversation.</h3>
           <p className="mt-4 max-w-xl text-base leading-relaxed text-primary-950/72">

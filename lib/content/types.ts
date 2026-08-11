@@ -1,5 +1,19 @@
 export type SchoolDivision = 'primary' | 'secondary';
 
+export type VisualVariant =
+  | 'primary'
+  | 'secondary'
+  | 'community'
+  | 'academics'
+  | 'leadership'
+  | 'admissions';
+
+export interface MediaAsset {
+  src: string;
+  alt: string;
+  focalPoint?: string;
+}
+
 export interface SiteSettings {
   name: string;
   shortName: string;
@@ -28,6 +42,7 @@ export interface DivisionContent {
   admissionsHref: string;
   stages: string[];
   accent: string;
+  media?: MediaAsset;
 }
 
 export interface LearningStage {
@@ -83,6 +98,7 @@ export interface CurriculumPageContent {
   division: SchoolDivision;
   href: string;
   sourceUrl: string;
+  media?: MediaAsset;
   cardTitle?: string;
   cardDescription?: string;
   sections: ContentSection[];
@@ -99,6 +115,7 @@ export interface LeadershipPageContent {
   summary: string;
   sections: ContentSection[];
   confirmationNeeded: string[];
+  portrait?: MediaAsset;
 }
 
 export interface AdmissionsStep {
@@ -130,6 +147,7 @@ export interface PageSectionSet {
   summary: string;
   sections: ContentSection[];
   aside?: PageAside;
+  media?: MediaAsset;
+  visualVariant?: VisualVariant;
   confirmationNeeded?: string[];
 }
-

@@ -14,6 +14,7 @@ export default function AdmissionsPage() {
         eyebrow="Admissions"
         title="Let’s talk about the right place for your child."
         subtitle="Whether you are considering Primary or Secondary School, our admissions team will help you understand the application, assessment, and resumption process."
+        variant="admissions"
       />
       <Section
         title="How to apply."
@@ -30,9 +31,9 @@ export default function AdmissionsPage() {
           ))}
         </div>
       </Section>
-      <Section title="Current requirements for your child." className="bg-surface/65" align="left">
-        <div className="dark-panel rounded-[2.5rem] p-6 text-primary-950 sm:p-8 lg:p-10">
-          <p className="max-w-3xl text-base leading-relaxed text-primary-950/76 md:text-lg">
+      <Section title="Current requirements for your child." tone="warm" align="left">
+        <div className="violet-panel rounded-[2.5rem] p-6 sm:p-8 lg:p-10">
+          <p className="max-w-3xl text-base leading-relaxed text-white/72 md:text-lg">
             Application documents, assessment dates, fees, and resumption requirements may vary by class and entry stage. Contact the admissions team for the current information before making payment or submitting documents.
           </p>
         </div>

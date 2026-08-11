@@ -13,6 +13,7 @@ export default function SecondaryAdmissionsPage() {
         eyebrow="Secondary Admissions"
         title="Begin a Secondary School enquiry."
         subtitle="Tell us whether you are considering Junior or Senior Secondary entry. Our team will share the current application requirements, assessment dates, and next steps."
+        variant="secondary"
       />
       <Section title="Secondary School application steps." align="left">
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">

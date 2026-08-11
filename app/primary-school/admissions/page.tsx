@@ -13,6 +13,7 @@ export default function PrimaryAdmissionsPage() {
         eyebrow="Primary Admissions"
         title="Begin a Primary School enquiry."
         subtitle="Tell us about your child and the class you are considering. Our team will guide you through the current Primary School application and assessment process."
+        variant="primary"
       />
       <Section title="Primary School application steps." align="left">
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">

@@ -16,6 +16,7 @@ export default function AcademicsPage() {
         eyebrow="Academics"
         title="Learning that deepens as students grow."
         subtitle="From early foundations to Senior Secondary study, the curriculum develops knowledge, communication, creativity, practical ability, and independent thinking."
+        variant="academics"
       />
       <Section
         title="Learning from Kindergarten to Senior Secondary."
@@ -29,7 +30,7 @@ export default function AcademicsPage() {
       <Section
         title="Senior Secondary choices."
         subtitle="Students can develop their strengths through Science, Arts, or Commercial study."
-        className="bg-surface/65"
+        tone="warm"
         align="left"
       >
         <div className="grid gap-5 md:grid-cols-3">
